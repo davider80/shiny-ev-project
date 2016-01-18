@@ -1,0 +1,258 @@
+CHARSET="ANSI";
+AXIS-VERSION="2010";
+CODEPAGE="Windows-1252";
+LANGUAGE="de";
+LANGUAGES="de","fr";
+CREATION-DATE="20101213 14:13";
+DECIMALS=0;
+SHOWDECIMALS=0;
+MATRIX="px-x-1103020100_103";
+COPYRIGHT=NO;
+SUBJECT-CODE="11";
+SUBJECT-AREA="11 - Mobilität und Verkehr";
+DESCRIPTION="Strassenfahrzeugbestand: Personenwagen 2010-2014";
+TITLE="Strassenfahrzeugbestand: Personenwagen nach Kanton, Treibstoff und Jahr";
+CONTENTS="Strassenfahrzeugbestand: Personenwagen";
+STUB="Kanton","Treibstoff";
+HEADING="Jahr";
+VALUES("Kanton")="Zürich","Bern / Berne","Luzern","Uri","Schwyz","Obwalden","Nidwalden","Glarus","Zug","Fribourg / Freiburg","Solothurn","Basel-Stadt","Basel-Landschaft","Schaffhausen","Appenzell Ausserrhoden","Appenzell Innerrhoden","St. Gallen","Graubünden / Grigioni / Grischun","Aargau","Thurgau","Ticino","Vaud","Valais / Wallis","Neuchâtel","Genève","Jura","Bund";
+VALUES("Treibstoff")="Benzin","Diesel","Benzin-elektrisch","Diesel-elektrisch","Elektrisch","Gas (mono- und bivalent)","Andere";
+VALUES("Jahr")="2010","2011","2012","2013","2014";
+CODES("Kanton")="1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27";
+CODES("Treibstoff")="100","200","300","400","500","600","9900";
+ELIMINATION("Kanton")=YES;
+ELIMINATION("Treibstoff")=YES;
+LAST-UPDATED="20150205 09:15";
+UNITS="Fahrzeuge";
+REFPERIOD="2014,2013,2012,2011,2010";
+CONTACT="Sektion Mobil, 058 463 66 25, E-Mail: <a href=mailto:daniel.bohnenblust@bfs.admin.ch>daniel.bohnenblust@bfs.admin.ch</a>";
+DATABASE="BFS - STAT-TAB / Bundesamt für Statistik, 2010 Neuchâtel / Schweiz / ©  Bundesamt für Statistik";
+SOURCE="Strassenfahrzeugbestand (MFZ)";
+NOTE="<B>Metainformationen:</B>#Erhebungsdatum: 30. September#Raumbezug: Kanton per 1.1.1997#Erhebung: Strassenfahrzeugbestand <A HREF=http://www.bfs.admin.ch/bfs/portal/de/index/themen/11/11/enq.85.detail.html TARGET=_blank>MFZ</A>##Quelle:#MOFIS-Datenbank, B"
+"undesamt für Strassen (ASTRA)##Definitionen:#Personenwagen sind Motorwagen zum Personentransport mit höchstens neun Sitzplätzen.##Nach Definition berücksichtigt der Strassenfahrzeugbestand des Bundesamtes für Statistik (BFS) die am 30. September immatrik"
+"ulierten zivilen Fahrzeuge von Haltern und Halterinnen, die an diesem Stichtag Wohnsitz in der Schweiz hatten. Die Wohngemeinde wird durch die Postleitzahl und die Postortschaft der Halteradresse bestimmt. Die Auswertung dieser Adresse wurde vor kurzem v"
+"erbessert, was eine rückwirkende Korrektur der Daten des Bestandes der Jahre 2005 und 2006 zur Folge hatte. Die Abweichungen des Bestandes nach Kanton sind in einer Grössenordnung von unter 2% oder in den meisten Fällen im Promillebereich.";
+NOTE("Kanton")="Der Kanton wird nach der Adresse des Halters oder der Halterin und nicht nach dem Nummernschild bestimmt.";
+DATASYMBOL1="-";
+DATASYMBOL4="*";
+DATASYMBOL5="( )";
+DATASYMBOL6="X";
+SUBJECT-AREA[fr]="11 - Mobilité et transports";
+DESCRIPTION[fr]="Parc de véhicules routiers: voitures de tourisme 2010-2014";
+TITLE[fr]="Parc de véhicules routiers: voitures de tourisme selon Canton, Carburant et Année";
+CONTENTS[fr]="Parc de véhicules routiers: voitures de tourisme";
+STUB[fr]="Canton","Carburant";
+HEADING[fr]="Année";
+VALUES[fr]("Canton")="Zürich","Bern / Berne","Luzern","Uri","Schwyz","Obwalden","Nidwalden","Glarus","Zug","Fribourg / Freiburg","Solothurn","Basel-Stadt","Basel-Landschaft","Schaffhausen","Appenzell Ausserrhoden","Appenzell Innerrhoden","St. Gallen","Graubünden / Grigioni / Grischun","Aargau","Thurgau","Ticino","Vaud","Valais / Wallis","Neuchâtel","Genève","Jura","Confédération";
+VALUES[fr]("Carburant")="Essence","Diesel","Essence-électrique","Diesel-électrique","Electrique","Gaz (monovalent et bivalent)","Autres";
+VALUES[fr]("Année")="2010","2011","2012","2013","2014";
+CODES[fr]("Canton")="1","2","3","4","5","6","7","8","9","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27";
+CODES[fr]("Carburant")="100","200","300","400","500","600","9900";
+ELIMINATION[fr]("Canton")=YES;
+ELIMINATION[fr]("Carburant")=YES;
+LAST-UPDATED[fr]="20150205 09:15";
+UNITS[fr]="Véhicules";
+REFPERIOD[fr]="2014,2013,2012,2011,2010";
+CONTACT[fr]="Section Mobil, 058 463 66 25, e-mail: <a href=mailto:daniel.bohnenblust@bfs.admin.ch>daniel.bohnenblust@bfs.admin.ch</a>";
+DATABASE[fr]="OFS - STAT-TAB / Office fédéral de la statistique, 2010 Neuchâtel / Suisse / ©  Office fédéral de la statistique";
+SOURCE[fr]="Parc des véhicules routiers (MFZ)";
+NOTE[fr]="<B>Métainformations:</B>#Date de l'enquête: 30 septembre#Référence spatiale: cantons au 1.1.1997#Enquête: Parc des véhicules routiers <A HREF=http://www.bfs.admin.ch/bfs/portal/fr/index/themen/11/11/enq.85.detail.html TARGET=_blank>MFZ</A>##Source:#Banqu"
+"e de données MOFIS, Office fédéral des routes (ASTRA)##Définitions:#Par convention, le parc de l’OFS comprend les véhicules civils immatriculés au 30 septembre et dont les détenteurs résidaient en Suisse à cette date. Le lieu de résidence est déterminé d"
+"'après le numéro postal et la localité postale de l’adresse du détenteur. Or, le traitement de cette adresse a été récemment corrigé et amélioré. En conséquence, les données des parcs 2005 et 2006 ont été révisées. Au niveau cantonal, les corrections son"
+"t toutefois minimes : les écarts restent inférieurs à deux pour cent et, dans la plupart des cas, ils sont de l’ordre du pour mille.";
+NOTE[fr]("Canton")="Le canton est déterminé d'après l'adresse du détenteur ou de la détentrice et non pas par la plaque d'immatriculation.";
+DATASYMBOL1[fr]="-";
+DATASYMBOL4[fr]="*";
+DATASYMBOL5[fr]="( )";
+DATASYMBOL6[fr]="X";
+DATA=
+544148 540203 532950 521795 512792 
+118963 133654 151974 169024 183949 
+3852 4917 5920 6981 8075 
+1 1 126 338 425 
+150 211 428 737 1201 
+1540 1625 1665 1741 1785 
+727 776 801 803 781 
+393396 389647 384743 379672 375904 
+84664 95091 107621 119673 129757 
+1588 2128 2724 3318 3911 
+1 2 103 222 319 
+46 108 177 269 428 
+858 927 967 1082 1184 
+437 465 519 555 540 
+152715 153008 152190 150073 148920 
+31802 36315 41962 47616 52442 
+818 1042 1305 1622 1931 
+0 1 25 44 73 
+10 38 79 118 196 
+305 338 359 387 454 
+217 236 251 261 270 
+14235 14114 14060 13812 13594 
+3415 3849 4312 4851 5319 
+35 40 48 64 72 
+1 1 3 3 8 
+1 2 4 5 10 
+4 4 6 8 5 
+8 9 11 13 10 
+70694 70761 70553 69672 69134 
+14999 17147 19758 22097 24119 
+416 518 627 719 846 
+0 0 18 39 55 
+7 15 37 54 112 
+69 77 90 96 105 
+60 75 85 89 87 
+15605 15652 15548 15273 14998 
+3826 4324 4985 5601 6186 
+74 91 112 146 173 
+0 0 2 7 10 
+1 1 3 8 23 
+11 14 21 26 30 
+25 28 30 30 34 
+19189 19067 18860 18653 18398 
+4515 5077 5717 6378 6949 
+114 161 178 212 240 
+0 0 6 13 18 
+0 0 4 7 22 
+21 29 32 30 34 
+35 35 40 48 44 
+16654 16732 16655 16410 16198 
+3906 4398 5034 5647 6179 
+47 62 76 94 109 
+0 0 1 6 8 
+0 1 5 9 18 
+29 31 31 38 37 
+15 18 20 21 23 
+51545 51238 50651 49677 49553 
+14808 16957 19491 22091 24092 
+426 520 627 694 765 
+0 0 33 59 81 
+10 65 54 45 101 
+98 105 110 105 106 
+76 74 95 99 100 
+126437 127558 128562 128379 128498 
+26983 30329 34297 38213 41609 
+533 751 1005 1323 1597 
+1 0 16 49 72 
+9 12 34 70 122 
+113 120 137 149 173 
+104 132 161 168 169 
+117586 117263 116951 115770 114693 
+21449 24285 27897 31211 34076 
+451 576 677 833 970 
+0 0 17 39 53 
+11 19 31 52 114 
+237 257 257 263 286 
+130 134 142 154 164 
+51762 50696 49734 47669 46334 
+13669 15081 16767 18124 19583 
+319 379 455 585 650 
+0 0 8 17 22 
+8 18 24 42 61 
+242 267 292 310 312 
+77 82 76 58 66 
+114387 113189 111653 108971 107439 
+22704 25370 28289 31363 33994 
+648 816 1019 1212 1383 
+0 0 14 37 48 
+26 31 49 78 133 
+327 360 372 419 457 
+103 116 142 142 142 
+33359 33574 33355 32907 32621 
+6594 7457 8518 9580 10546 
+169 199 239 286 329 
+0 0 5 19 27 
+2 6 16 26 49 
+127 135 136 138 145 
+60 66 65 68 68 
+22488 22633 22537 22336 22293 
+4948 5566 6373 7094 7704 
+86 114 149 160 191 
+1 1 11 18 21 
+2 2 9 18 31 
+38 38 42 46 50 
+17 22 23 24 22 
+6675 6691 6613 6544 6493 
+1591 1800 2003 2218 2408 
+16 20 23 25 25 
+0 0 7 6 6 
+0 0 1 6 10 
+2 4 4 5 5 
+2 3 3 4 4 
+200110 200656 199548 197145 194309 
+44482 50439 57933 65224 71484 
+816 1014 1246 1503 1776 
+1 2 64 128 185 
+11 30 66 113 201 
+415 452 466 483 513 
+240 245 258 264 269 
+76567 75969 74877 73114 71932 
+23213 25962 29176 32316 35039 
+232 271 326 368 416 
+0 0 26 46 56 
+3 12 24 40 79 
+47 54 55 63 81 
+60 40 54 59 59 
+280028 280986 280118 278203 275840 
+56916 64085 73240 82074 90082 
+1522 1978 2501 3031 3527 
+0 0 41 115 164 
+19 47 104 167 328 
+615 681 720 784 877 
+324 340 375 397 405 
+119145 120463 121003 120083 120407 
+22505 25401 29479 33591 37131 
+483 659 823 1036 1213 
+3 7 18 47 59 
+7 12 48 94 155 
+330 356 370 373 381 
+143 158 178 183 182 
+160103 160254 159276 157459 156456 
+43041 46228 50343 54951 59268 
+751 989 1275 1725 2128 
+0 0 40 76 102 
+112 120 141 166 247 
+230 260 323 432 511 
+225 290 299 297 127 
+290321 290234 289549 287481 286531 
+73953 82088 91335 99648 105522 
+1678 2111 2633 3172 3767 
+0 0 73 151 233 
+12 38 91 146 250 
+587 670 716 844 955 
+211 258 290 298 293 
+148586 149894 150527 149232 148422 
+36072 40569 45859 50591 54830 
+488 626 811 963 1132 
+0 0 34 65 93 
+198 217 241 268 311 
+103 113 122 141 158 
+83 89 118 120 129 
+72528 72711 72805 72521 71234 
+16942 18365 19931 21445 22862 
+318 431 526 638 770 
+0 0 24 43 59 
+2 7 18 21 43 
+119 122 126 135 136 
+71 77 87 87 87 
+178324 176088 173274 169600 166747 
+36703 40231 44094 46790 49552 
+1171 1446 1798 2190 2533 
+8 16 51 78 109 
+18 31 53 85 144 
+141 263 270 295 324 
+139 195 226 237 227 
+32009 32183 32083 32109 31970 
+6442 7019 7696 8432 8994 
+88 142 198 260 310 
+0 0 3 9 13 
+0 1 17 39 50 
+44 47 53 64 70 
+17 20 27 29 31 
+38 37 0 0 0 
+7 7 0 0 0 
+0 0 0 0 0 
+0 0 0 0 0 
+0 0 0 0 0 
+0 0 0 0 0 
+0 0 0 0 0 
+;

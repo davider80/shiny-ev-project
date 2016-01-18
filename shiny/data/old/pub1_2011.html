@@ -1,0 +1,4077 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<meta name="Generator" content="SAS Software Version 9.2, see www.sas.com">
+<meta http-equiv="Content-type" content="charset=windows-1252">
+<title>SAS Output</title>
+<style type="text/css">
+<!--
+.AfterCaption
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #E0E0E0;
+  padding: 0px;
+  border-spacing: 0px;
+}
+.Batch
+{
+  font-family: 'SAS Monospace', 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #D3D3D3;
+  padding: 7px;
+  border-collapse: separate;
+  border-spacing: 1px;
+  border: 1px solid #000000;
+}
+.BeforeCaption
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #E0E0E0;
+  padding: 0px;
+  border-spacing: 0px;
+}
+.BodyDate
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+  padding: 0px;
+  border-spacing: 0px;
+  width: 100%;
+  text-align: right;
+  vertical-align: top;
+}
+.ByContentFolder
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  margin-left: 6pt;
+  list-style-type: none;
+}
+.Byline
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-weight: bold;
+  font-style: normal;
+  color: #0033AA;
+  background-color: #B0B0B0;
+  padding: 0px;
+  border-spacing: 0px;
+}
+.BylineContainer
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+  padding: 1px;
+  border-spacing: 1px;
+  border: 0px solid #000000;
+  width: 100%;
+}
+.Caption
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #E0E0E0;
+  padding: 0px;
+  border-spacing: 0px;
+}
+.cell
+{
+  font-family: Arial;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #FFFFFF;
+}
+.Container
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+}
+.ContentFolder
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  margin-left: 6pt;
+  list-style-type: none;
+}
+.ContentItem
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #0033AA;
+  margin-left: 6pt;
+  list-style-type: none;
+}
+.ContentProcLabel
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  list-style-type: decimal;
+}
+.ContentProcName
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  list-style-type: decimal;
+}
+.Contents
+{
+  color: #0033AA;
+  background-color: #B0B0B0;
+  margin-left: 8px;
+  margin-right: 8px;
+  list-style-type: decimal;
+}
+.ContentsDate
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #0033AA;
+  background-color: #B0B0B0;
+  width: 100%;
+}
+.ContentTitle
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: italic;
+  color: #002288;
+}
+.Continued
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-weight: bold;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+  padding: 0px;
+  border-spacing: 0px;
+  width: 100%;
+  text-align: left;
+}
+.Data
+{
+  font-family: Arial;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #FFFFFF;
+}
+.DataEmphasis
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: italic;
+  color: #000000;
+  background-color: #D3D3D3;
+}
+.DataEmphasisFixed
+{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: italic;
+  color: #000000;
+  background-color: #D3D3D3;
+}
+.DataEmpty
+{
+  font-family: Arial;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #FFFFFF;
+}
+.DataFixed
+{
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #FFFFFF;
+}
+.DataStrong
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D3D3D3;
+}
+.DataStrongFixed
+{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #D3D3D3;
+}
+.Date
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #0033AA;
+  background-color: #B0B0B0;
+  width: 100%;
+}
+.Document
+{
+}
+a:link {
+color:#DD99DD
+}
+a:visited {
+color:#808080
+}
+.ErrorBanner
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: bold;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+}
+.ErrorContent
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+}
+.ErrorContentFixed
+{
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+}
+.ExtendedPage
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: italic;
+  color: #002288;
+  background-color: #E0E0E0;
+  padding: 2pt;
+  border: 1pt solid #000000;
+  text-align: center;
+}
+.FatalBanner
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: bold;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+}
+.FatalContent
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+}
+.FatalContentFixed
+{
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+}
+.FolderAction
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #0033AA;
+  margin-left: 6pt;
+  list-style-type: none;
+}
+.Footer
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-weight: bold;
+  font-style: normal;
+  color: #0033AA;
+  background-color: #B0B0B0;
+}
+.FooterEmphasis
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: italic;
+  color: #0033AA;
+  background-color: #B0B0B0;
+}
+.FooterEmphasisFixed
+{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: italic;
+  color: #0033AA;
+  background-color: #B0B0B0;
+}
+.FooterEmpty
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-weight: bold;
+  font-style: normal;
+  color: #0033AA;
+  background-color: #B0B0B0;
+}
+.FooterFixed
+{
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #0033AA;
+  background-color: #B0B0B0;
+}
+.FooterStrong
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-weight: bold;
+  font-style: normal;
+  color: #0033AA;
+  background-color: #B0B0B0;
+}
+.FooterStrongFixed
+{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #0033AA;
+  background-color: #B0B0B0;
+}
+.Frame
+{
+}
+.Graph
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+  padding: 0px;
+  border-collapse: separate;
+  border-spacing: 1px;
+  border: 1px solid #000000;
+}
+.Header
+{
+  font-family: Arial;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #FFFFFF;
+  text-align: left;
+}
+.HeaderEmphasis
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: italic;
+  color: #0033AA;
+  background-color: #B0B0B0;
+  text-align: left;
+}
+.HeaderEmphasisFixed
+{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: italic;
+  color: #0033AA;
+  background-color: #B0B0B0;
+  text-align: left;
+}
+.HeaderEmpty
+{
+  font-family: Arial;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #FFFFFF;
+  text-align: left;
+}
+.HeaderFixed
+{
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #FFFFFF;
+  text-align: left;
+}
+.HeadersAndFooters
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-weight: bold;
+  font-style: normal;
+  color: #0033AA;
+  background-color: #B0B0B0;
+}
+.HeaderStrong
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-weight: bold;
+  font-style: normal;
+  color: #0033AA;
+  background-color: #B0B0B0;
+  text-align: left;
+}
+.HeaderStrongFixed
+{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #0033AA;
+  background-color: #B0B0B0;
+  text-align: left;
+}
+.Index
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #0033AA;
+  background-color: #B0B0B0;
+}
+.IndexAction
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #0033AA;
+  margin-left: 6pt;
+  list-style-type: none;
+}
+.IndexItem
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #0033AA;
+  margin-left: 6pt;
+  list-style-type: none;
+}
+.IndexProcName
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  list-style-type: decimal;
+}
+.IndexTitle
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: italic;
+  color: #002288;
+}
+.LayoutContainer
+{
+  padding: 0px;
+  border-spacing: 30px;
+  border: 0px solid #000000;
+}
+.LayoutRegion
+{
+  padding: 0px;
+  border-spacing: 30px;
+  border: 0px solid #000000;
+}
+.List
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+  list-style-type: disc;
+  width: 100%;
+  text-align: left;
+}
+.List10
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+  list-style-type: square;
+  width: 100%;
+  text-align: left;
+}
+.List2
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+  list-style-type: circle;
+  width: 100%;
+  text-align: left;
+}
+.List3
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+  list-style-type: square;
+  width: 100%;
+  text-align: left;
+}
+.List4
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+  list-style-type: square;
+  width: 100%;
+  text-align: left;
+}
+.List5
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+  list-style-type: square;
+  width: 100%;
+  text-align: left;
+}
+.List6
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+  list-style-type: square;
+  width: 100%;
+  text-align: left;
+}
+.List7
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+  list-style-type: square;
+  width: 100%;
+  text-align: left;
+}
+.List8
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+  list-style-type: square;
+  width: 100%;
+  text-align: left;
+}
+.List9
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+  list-style-type: square;
+  width: 100%;
+  text-align: left;
+}
+.ListItem
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+}
+.ListItem10
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+}
+.ListItem2
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+}
+.ListItem3
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+}
+.ListItem4
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+}
+.ListItem5
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+}
+.ListItem6
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+}
+.ListItem7
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+}
+.ListItem8
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+}
+.ListItem9
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+}
+.Note
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+}
+.NoteBanner
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: bold;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+}
+.NoteContent
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+}
+.NoteContentFixed
+{
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+}
+.Output
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  background-color: #F0F0F0;
+  padding: 7px;
+  border-collapse: separate;
+  border-spacing: 1px;
+  border: 1px solid #000000;
+}
+.PageNo
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-weight: bold;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+  padding: 0px;
+  border-spacing: 0px;
+  text-align: right;
+  vertical-align: top;
+}
+.Pages
+{
+  color: #0033AA;
+  background-color: #B0B0B0;
+  margin-left: 8px;
+  margin-right: 8px;
+  list-style-type: decimal;
+}
+.PagesDate
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #0033AA;
+  background-color: #B0B0B0;
+  width: 100%;
+}
+.PagesItem
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #0033AA;
+  margin-left: 6pt;
+  list-style-type: none;
+}
+.PagesProcLabel
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  list-style-type: decimal;
+}
+.PagesProcName
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  list-style-type: decimal;
+}
+.PagesTitle
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: italic;
+  color: #002288;
+}
+.Paragraph
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+  width: 100%;
+  text-align: left;
+}
+.Parskip
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-weight: bold;
+  font-style: normal;
+  padding: 0px;
+  border-spacing: 0px;
+  border: 0px solid #000000;
+}
+.PrePage
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+  text-align: left;
+}
+.ProcTitle
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-weight: bold;
+  font-style: italic;
+  color: #002288;
+  background-color: #E0E0E0;
+}
+.ProcTitleFixed
+{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+}
+.RowFooter
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-weight: bold;
+  font-style: normal;
+  color: #0033AA;
+  background-color: #B0B0B0;
+}
+.RowFooterEmphasis
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: italic;
+  color: #0033AA;
+  background-color: #B0B0B0;
+}
+.RowFooterEmphasisFixed
+{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: italic;
+  color: #0033AA;
+  background-color: #B0B0B0;
+}
+.RowFooterEmpty
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-weight: bold;
+  font-style: normal;
+  color: #0033AA;
+  background-color: #B0B0B0;
+}
+.RowFooterFixed
+{
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #0033AA;
+  background-color: #B0B0B0;
+}
+.RowFooterStrong
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-weight: bold;
+  font-style: normal;
+  color: #0033AA;
+  background-color: #B0B0B0;
+}
+.RowFooterStrongFixed
+{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #0033AA;
+  background-color: #B0B0B0;
+}
+.RowHeader
+{
+  font-family: Arial;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #FFFFFF;
+  text-align: left;
+}
+.RowHeaderEmphasis
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: italic;
+  color: #000000;
+  background-color: #FFFFFF;
+  text-align: left;
+}
+.RowHeaderEmphasisFixed
+{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: italic;
+  color: #000000;
+  background-color: #FFFFFF;
+  text-align: left;
+}
+.RowHeaderEmpty
+{
+  font-family: Arial;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #FFFFFF;
+  text-align: left;
+}
+.RowHeaderFixed
+{
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #000000;
+  background-color: #FFFFFF;
+  text-align: left;
+}
+.RowHeaderStrong
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #FFFFFF;
+  text-align: left;
+}
+.RowHeaderStrongFixed
+{
+  font-family: 'Courier New', Courier, monospace;
+  font-size: x-small;
+  font-weight: bold;
+  font-style: normal;
+  color: #000000;
+  background-color: #FFFFFF;
+  text-align: left;
+}
+.SystemFooter
+{
+  font-family: Arial;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+}
+.SystemFooter10
+{
+  font-family: Arial;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+}
+.SystemFooter2
+{
+  font-family: Arial;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+}
+.SystemFooter3
+{
+  font-family: Arial;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+}
+.SystemFooter4
+{
+  font-family: Arial;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+}
+.SystemFooter5
+{
+  font-family: Arial;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+}
+.SystemFooter6
+{
+  font-family: Arial;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+}
+.SystemFooter7
+{
+  font-family: Arial;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+}
+.SystemFooter8
+{
+  font-family: Arial;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+}
+.SystemFooter9
+{
+  font-family: Arial;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+}
+.SystemTitle
+{
+  font-family: Arial;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+}
+.SystemTitle10
+{
+  font-family: Arial;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+}
+.SystemTitle2
+{
+  font-family: Arial;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+}
+.SystemTitle3
+{
+  font-family: Arial;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+}
+.SystemTitle4
+{
+  font-family: Arial;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+}
+.SystemTitle5
+{
+  font-family: Arial;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+}
+.SystemTitle6
+{
+  font-family: Arial;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+}
+.SystemTitle7
+{
+  font-family: Arial;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+}
+.SystemTitle8
+{
+  font-family: Arial;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+}
+.SystemTitle9
+{
+  font-family: Arial;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  background-color: #FFFFFF;
+}
+.SysTitleAndFooterContainer
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+  padding: 4px;
+  border-spacing: 2px;
+  border: 0px solid #000000;
+  width: 98%;
+}
+.Table
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  background-color: #F0F0F0;
+  border-collapse: separate;
+  border-spacing: 1px;
+  border: 1px solid #000000;
+}
+.top_stacked_value
+{
+  padding-bottom: 1px;
+}
+.middle_stacked_value
+{
+  padding-top: 1px;
+  padding-bottom: 1px;
+}
+.bottom_stacked_value
+{
+  padding-top: 1px;
+}
+.TitleAndNoteContainer
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+  padding: 1px;
+  border-spacing: 1px;
+  border: 0px solid #000000;
+  width: 100%;
+}
+.TitlesAndFooters
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: medium;
+  font-weight: bold;
+  font-style: italic;
+  color: #002288;
+  background-color: #E0E0E0;
+}
+.UserText
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+  text-align: left;
+}
+.WarnBanner
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: bold;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+}
+.WarnContent
+{
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+}
+.WarnContentFixed
+{
+  font-family: 'Courier New', Courier;
+  font-size: x-small;
+  font-weight: normal;
+  font-style: normal;
+  color: #002288;
+  background-color: #E0E0E0;
+}
+.l {text-align: left }
+.c {text-align: center }
+.r {text-align: right }
+.d {text-align: right }
+.j {text-align: justify }
+.t {vertical-align: top }
+.m {vertical-align: middle }
+.b {vertical-align: bottom }
+TD, TH {vertical-align: top }
+.stacked_cell{padding: 0 }
+-->
+</style>
+<script language="javascript" type="text/javascript">
+<!-- 
+function startup(){
+
+}
+function shutdown(){
+
+}
+
+//-->
+</script>
+
+</head>
+<body onload="startup()" onunload="shutdown()" class="body">
+
+<script language="javascript" type="text/javascript">
+<!-- 
+var _info = navigator.userAgent
+var _ie = (_info.indexOf("MSIE") > 0
+          && _info.indexOf("Win") > 0
+          && _info.indexOf("Windows 3.1") < 0);
+
+//-->
+</script>
+
+<div class="branch">
+<a name="IDX"></a>
+<table class="SysTitleAndFooterContainer" width="100%" cellspacing="2" cellpadding="4" border="0" summary="Page Layout">
+<tr>
+<td class="l SystemTitle">BUNDESAMT FUER STATISTIK / OFFICE FEDERAL DE LA STATISTIQUE</td>
+</tr>
+<tr>
+<td class="l SystemTitle2">Personenwagen / Voitures de tourisme</td>
+</tr>
+</table><br>
+<div>
+<div align="left">
+<table class="Table" cellspacing="1" cellpadding="7" rules="groups" frame="box" border="1" bordercolor="#000000" summary="Procedure Tabulate: Table 1">
+<colgroup>
+<col>
+</colgroup>
+<colgroup>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+<col>
+</colgroup>
+<thead>
+<tr>
+<th class="l m Header" rowspan="2" scope="col">2011</th>
+<th class="l Header" rowspan="2" scope="col">Total</th>
+<th class="l Header" colspan="3" scope="colgroup">Région lémanique </th>
+<th class="l Header" colspan="5" scope="colgroup">Espace Mittelland</th>
+<th class="l Header" colspan="3" scope="colgroup">Nordwestschweiz  </th>
+<th class="l Header" scope="col">Zürich     <br>     </th>
+<th class="l Header" colspan="7" scope="colgroup">Ostschweiz       </th>
+<th class="l Header" colspan="6" scope="colgroup">Zentralschweiz   </th>
+<th class="l Header" scope="col">Ticino     <br>     </th>
+<th class="l Header" scope="col"> </th>
+</tr>
+<tr>
+<th class="l Header" scope="col">Vaud       <br>   </th>
+<th class="l Header" scope="col">Valais     <br>   </th>
+<th class="l Header" scope="col">Genève     <br>   </th>
+<th class="l Header" scope="col">Bern       <br>   </th>
+<th class="l Header" scope="col">Fribourg   <br>   </th>
+<th class="l Header" scope="col">Solothurn  <br>   </th>
+<th class="l Header" scope="col">Neuchâtel  <br>   </th>
+<th class="l Header" scope="col">Jura       <br>   </th>
+<th class="l Header" scope="col">Basel-Stadt<br>   </th>
+<th class="l Header" scope="col">Basel-Land <br>   </th>
+<th class="l Header" scope="col">Aargau     <br>   </th>
+<th class="l Header" scope="col">Zürich     <br>   </th>
+<th class="l Header" scope="col">Glarus     <br>   </th>
+<th class="l Header" scope="col">Schaffhausen   </th>
+<th class="l Header" scope="col">Appenzell A.Rh.</th>
+<th class="l Header" scope="col">Appenzell I.Rh.</th>
+<th class="l Header" scope="col">St.Gallen  <br>   </th>
+<th class="l Header" scope="col">Graubünden <br>   </th>
+<th class="l Header" scope="col">Thurgau    <br>   </th>
+<th class="l Header" scope="col">Luzern     <br>   </th>
+<th class="l Header" scope="col">Uri        <br>   </th>
+<th class="l Header" scope="col">Schwyz     <br>   </th>
+<th class="l Header" scope="col">Obwalden   <br>   </th>
+<th class="l Header" scope="col">Nidwalden  <br>   </th>
+<th class="l Header" scope="col">Zug        <br>   </th>
+<th class="l Header" scope="col">Ticino     <br>   </th>
+<th class="l Header" scope="col">BV/AF      <br>   </th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th class="l t RowHeader" scope="row">Total</th>
+<td class="r b Data">4163003</td>
+<td class="r b Data"> 375399</td>
+<td class="r b Data"> 191508</td>
+<td class="r b Data"> 218270</td>
+<td class="r b Data"> 488368</td>
+<td class="r b Data"> 158902</td>
+<td class="r b Data"> 142534</td>
+<td class="r b Data">  91713</td>
+<td class="r b Data">  39412</td>
+<td class="r b Data">  66523</td>
+<td class="r b Data"> 139882</td>
+<td class="r b Data"> 348117</td>
+<td class="r b Data"> 681387</td>
+<td class="r b Data">  21242</td>
+<td class="r b Data">  41437</td>
+<td class="r b Data">  28376</td>
+<td class="r b Data">   8518</td>
+<td class="r b Data"> 252838</td>
+<td class="r b Data"> 102308</td>
+<td class="r b Data"> 147056</td>
+<td class="r b Data"> 190978</td>
+<td class="r b Data">  18019</td>
+<td class="r b Data">  88593</td>
+<td class="r b Data">  20110</td>
+<td class="r b Data">  24369</td>
+<td class="r b Data">  68959</td>
+<td class="r b Data"> 208141</td>
+<td class="r b Data">     44</td>
+</tr>
+<tr>
+<th class="l t RowHeader" style=" background-color: #808080;" scope="row">Antrieb <BR> Traction</th>
+<td class="r b Data" rowspan="2"> 885079</td>
+<td class="r b Data" rowspan="2">  70152</td>
+<td class="r b Data" rowspan="2">  62215</td>
+<td class="r b Data" rowspan="2">  40528</td>
+<td class="r b Data" rowspan="2"> 101791</td>
+<td class="r b Data" rowspan="2">  25653</td>
+<td class="r b Data" rowspan="2">  22619</td>
+<td class="r b Data" rowspan="2">  17430</td>
+<td class="r b Data" rowspan="2">   7819</td>
+<td class="r b Data" rowspan="2">   9483</td>
+<td class="r b Data" rowspan="2">  23355</td>
+<td class="r b Data" rowspan="2">  55451</td>
+<td class="r b Data" rowspan="2"> 133410</td>
+<td class="r b Data" rowspan="2">   7182</td>
+<td class="r b Data" rowspan="2">   7255</td>
+<td class="r b Data" rowspan="2">  12367</td>
+<td class="r b Data" rowspan="2">   4323</td>
+<td class="r b Data" rowspan="2">  59664</td>
+<td class="r b Data" rowspan="2">  56393</td>
+<td class="r b Data" rowspan="2">  22735</td>
+<td class="r b Data" rowspan="2">  33090</td>
+<td class="r b Data" rowspan="2">   5916</td>
+<td class="r b Data" rowspan="2">  28158</td>
+<td class="r b Data" rowspan="2">   6461</td>
+<td class="r b Data" rowspan="2">   5722</td>
+<td class="r b Data" rowspan="2">  19010</td>
+<td class="r b Data" rowspan="2">  46889</td>
+<td class="r b Data" rowspan="2">      8</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">Allrad / sur toutes les roues</th>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">Hinterrad / arrière          </th>
+<td class="r b Data"> 463400</td>
+<td class="r b Data">  35462</td>
+<td class="r b Data">  15426</td>
+<td class="r b Data">  26852</td>
+<td class="r b Data">  47108</td>
+<td class="r b Data">  12501</td>
+<td class="r b Data">  15699</td>
+<td class="r b Data">   5960</td>
+<td class="r b Data">   2266</td>
+<td class="r b Data">  10441</td>
+<td class="r b Data">  18953</td>
+<td class="r b Data">  43912</td>
+<td class="r b Data">  96541</td>
+<td class="r b Data">   1686</td>
+<td class="r b Data">   5440</td>
+<td class="r b Data">   2183</td>
+<td class="r b Data">    682</td>
+<td class="r b Data">  27558</td>
+<td class="r b Data">   7445</td>
+<td class="r b Data">  17647</td>
+<td class="r b Data">  19414</td>
+<td class="r b Data">   1272</td>
+<td class="r b Data">  11074</td>
+<td class="r b Data">   1505</td>
+<td class="r b Data">   2692</td>
+<td class="r b Data">  10342</td>
+<td class="r b Data">  23317</td>
+<td class="r b Data">     22</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">Vorderrad / avant            </th>
+<td class="r b Data">2806253</td>
+<td class="r b Data"> 269176</td>
+<td class="r b Data"> 113780</td>
+<td class="r b Data"> 150747</td>
+<td class="r b Data"> 339456</td>
+<td class="r b Data"> 120709</td>
+<td class="r b Data"> 103808</td>
+<td class="r b Data">  68249</td>
+<td class="r b Data">  29289</td>
+<td class="r b Data">  46127</td>
+<td class="r b Data">  97555</td>
+<td class="r b Data"> 248321</td>
+<td class="r b Data"> 446323</td>
+<td class="r b Data">  12367</td>
+<td class="r b Data">  28705</td>
+<td class="r b Data">  13823</td>
+<td class="r b Data">   3511</td>
+<td class="r b Data"> 165553</td>
+<td class="r b Data">  38448</td>
+<td class="r b Data"> 106629</td>
+<td class="r b Data"> 138331</td>
+<td class="r b Data">  10831</td>
+<td class="r b Data">  49000</td>
+<td class="r b Data">  12142</td>
+<td class="r b Data">  15953</td>
+<td class="r b Data">  39479</td>
+<td class="r b Data"> 137928</td>
+<td class="r b Data">     13</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">zz.übrige / autre            </th>
+<td class="r b Data">   8271</td>
+<td class="r b Data">    609</td>
+<td class="r b Data">     87</td>
+<td class="r b Data">    143</td>
+<td class="r b Data">     13</td>
+<td class="r b Data">     39</td>
+<td class="r b Data">    408</td>
+<td class="r b Data">     74</td>
+<td class="r b Data">     38</td>
+<td class="r b Data">    472</td>
+<td class="r b Data">     19</td>
+<td class="r b Data">    433</td>
+<td class="r b Data">   5113</td>
+<td class="r b Data">      7</td>
+<td class="r b Data">     37</td>
+<td class="r b Data">      3</td>
+<td class="r b Data">      2</td>
+<td class="r b Data">     63</td>
+<td class="r b Data">     22</td>
+<td class="r b Data">     45</td>
+<td class="r b Data">    143</td>
+<td class="r b Data">0</td>
+<td class="r b Data">    361</td>
+<td class="r b Data">      2</td>
+<td class="r b Data">      2</td>
+<td class="r b Data">    128</td>
+<td class="r b Data">      7</td>
+<td class="r b Data">      1</td>
+</tr>
+<tr>
+<th class="l t RowHeader" style=" background-color: #808080;" scope="row">Hubraum <BR> Cylindrée</th>
+<td class="r b Data" rowspan="2">   1044</td>
+<td class="r b Data" rowspan="2">     38</td>
+<td class="r b Data" rowspan="2">    217</td>
+<td class="r b Data" rowspan="2">     31</td>
+<td class="r b Data" rowspan="2">    108</td>
+<td class="r b Data" rowspan="2">     12</td>
+<td class="r b Data" rowspan="2">     19</td>
+<td class="r b Data" rowspan="2">      7</td>
+<td class="r b Data" rowspan="2">      1</td>
+<td class="r b Data" rowspan="2">     18</td>
+<td class="r b Data" rowspan="2">     31</td>
+<td class="r b Data" rowspan="2">     47</td>
+<td class="r b Data" rowspan="2">    211</td>
+<td class="r b Data" rowspan="2">      1</td>
+<td class="r b Data" rowspan="2">      6</td>
+<td class="r b Data" rowspan="2">      2</td>
+<td class="r b Data" rowspan="2">0</td>
+<td class="r b Data" rowspan="2">     30</td>
+<td class="r b Data" rowspan="2">     12</td>
+<td class="r b Data" rowspan="2">     12</td>
+<td class="r b Data" rowspan="2">     38</td>
+<td class="r b Data" rowspan="2">      2</td>
+<td class="r b Data" rowspan="2">     15</td>
+<td class="r b Data" rowspan="2">      1</td>
+<td class="r b Data" rowspan="2">0</td>
+<td class="r b Data" rowspan="2">     65</td>
+<td class="r b Data" rowspan="2">    120</td>
+<td class="r b Data" rowspan="2">0</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">elektrisch / électrique</th>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">0000-0999              </th>
+<td class="r b Data"> 122682</td>
+<td class="r b Data">  11101</td>
+<td class="r b Data">   3407</td>
+<td class="r b Data">   8318</td>
+<td class="r b Data">  14142</td>
+<td class="r b Data">   4771</td>
+<td class="r b Data">   4451</td>
+<td class="r b Data">   2846</td>
+<td class="r b Data">   1084</td>
+<td class="r b Data">   2023</td>
+<td class="r b Data">   4194</td>
+<td class="r b Data">   9697</td>
+<td class="r b Data">  19839</td>
+<td class="r b Data">    496</td>
+<td class="r b Data">   1180</td>
+<td class="r b Data">    731</td>
+<td class="r b Data">    197</td>
+<td class="r b Data">   6965</td>
+<td class="r b Data">   1945</td>
+<td class="r b Data">   4399</td>
+<td class="r b Data">   5325</td>
+<td class="r b Data">    338</td>
+<td class="r b Data">   2070</td>
+<td class="r b Data">    394</td>
+<td class="r b Data">    627</td>
+<td class="r b Data">   1485</td>
+<td class="r b Data">  10657</td>
+<td class="r b Data">0</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">1000-1399              </th>
+<td class="r b Data"> 839732</td>
+<td class="r b Data">  92398</td>
+<td class="r b Data">  38288</td>
+<td class="r b Data">  48844</td>
+<td class="r b Data">  99013</td>
+<td class="r b Data">  40729</td>
+<td class="r b Data">  30492</td>
+<td class="r b Data">  24608</td>
+<td class="r b Data">  10345</td>
+<td class="r b Data">  11507</td>
+<td class="r b Data">  25764</td>
+<td class="r b Data">  64296</td>
+<td class="r b Data"> 114656</td>
+<td class="r b Data">   3964</td>
+<td class="r b Data">   7751</td>
+<td class="r b Data">   5254</td>
+<td class="r b Data">   1398</td>
+<td class="r b Data">  46557</td>
+<td class="r b Data">  15524</td>
+<td class="r b Data">  28891</td>
+<td class="r b Data">  40042</td>
+<td class="r b Data">   3257</td>
+<td class="r b Data">  14030</td>
+<td class="r b Data">   3822</td>
+<td class="r b Data">   4588</td>
+<td class="r b Data">   9161</td>
+<td class="r b Data">  54549</td>
+<td class="r b Data">      4</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">1400-1799              </th>
+<td class="r b Data">1047352</td>
+<td class="r b Data">  99632</td>
+<td class="r b Data">  49252</td>
+<td class="r b Data">  54791</td>
+<td class="r b Data"> 129262</td>
+<td class="r b Data">  44523</td>
+<td class="r b Data">  36800</td>
+<td class="r b Data">  25065</td>
+<td class="r b Data">  11165</td>
+<td class="r b Data">  16093</td>
+<td class="r b Data">  33906</td>
+<td class="r b Data">  86620</td>
+<td class="r b Data"> 162042</td>
+<td class="r b Data">   5239</td>
+<td class="r b Data">   9978</td>
+<td class="r b Data">   6356</td>
+<td class="r b Data">   1882</td>
+<td class="r b Data">  61847</td>
+<td class="r b Data">  22203</td>
+<td class="r b Data">  36693</td>
+<td class="r b Data">  51229</td>
+<td class="r b Data">   4792</td>
+<td class="r b Data">  20918</td>
+<td class="r b Data">   5005</td>
+<td class="r b Data">   6160</td>
+<td class="r b Data">  14537</td>
+<td class="r b Data">  51346</td>
+<td class="r b Data">     16</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">1800-1999              </th>
+<td class="r b Data">1108350</td>
+<td class="r b Data">  95045</td>
+<td class="r b Data">  54060</td>
+<td class="r b Data">  50049</td>
+<td class="r b Data"> 134743</td>
+<td class="r b Data">  40577</td>
+<td class="r b Data">  37115</td>
+<td class="r b Data">  23648</td>
+<td class="r b Data">  10472</td>
+<td class="r b Data">  17788</td>
+<td class="r b Data">  36823</td>
+<td class="r b Data">  94672</td>
+<td class="r b Data"> 180784</td>
+<td class="r b Data">   6360</td>
+<td class="r b Data">  10900</td>
+<td class="r b Data">   8262</td>
+<td class="r b Data">   2423</td>
+<td class="r b Data">  70260</td>
+<td class="r b Data">  33099</td>
+<td class="r b Data">  38722</td>
+<td class="r b Data">  51241</td>
+<td class="r b Data">   5713</td>
+<td class="r b Data">  23783</td>
+<td class="r b Data">   6195</td>
+<td class="r b Data">   6500</td>
+<td class="r b Data">  18547</td>
+<td class="r b Data">  50559</td>
+<td class="r b Data">     10</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">2000-2499              </th>
+<td class="r b Data"> 450133</td>
+<td class="r b Data">  34339</td>
+<td class="r b Data">  21187</td>
+<td class="r b Data">  21928</td>
+<td class="r b Data">  53863</td>
+<td class="r b Data">  14445</td>
+<td class="r b Data">  15556</td>
+<td class="r b Data">   7733</td>
+<td class="r b Data">   3200</td>
+<td class="r b Data">   8017</td>
+<td class="r b Data">  16633</td>
+<td class="r b Data">  40921</td>
+<td class="r b Data">  79805</td>
+<td class="r b Data">   2469</td>
+<td class="r b Data">   5298</td>
+<td class="r b Data">   3165</td>
+<td class="r b Data">   1012</td>
+<td class="r b Data">  28777</td>
+<td class="r b Data">  12817</td>
+<td class="r b Data">  16747</td>
+<td class="r b Data">  20640</td>
+<td class="r b Data">   2058</td>
+<td class="r b Data">  10185</td>
+<td class="r b Data">   2268</td>
+<td class="r b Data">   2533</td>
+<td class="r b Data">   8029</td>
+<td class="r b Data">  16500</td>
+<td class="r b Data">      8</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">2500-2999              </th>
+<td class="r b Data"> 338881</td>
+<td class="r b Data">  24131</td>
+<td class="r b Data">  14965</td>
+<td class="r b Data">  17213</td>
+<td class="r b Data">  34692</td>
+<td class="r b Data">   8734</td>
+<td class="r b Data">  10774</td>
+<td class="r b Data">   4969</td>
+<td class="r b Data">   2021</td>
+<td class="r b Data">   6184</td>
+<td class="r b Data">  12518</td>
+<td class="r b Data">  29638</td>
+<td class="r b Data">  68935</td>
+<td class="r b Data">   1723</td>
+<td class="r b Data">   3794</td>
+<td class="r b Data">   2747</td>
+<td class="r b Data">    954</td>
+<td class="r b Data">  22880</td>
+<td class="r b Data">  10463</td>
+<td class="r b Data">  12442</td>
+<td class="r b Data">  13497</td>
+<td class="r b Data">   1149</td>
+<td class="r b Data">   9283</td>
+<td class="r b Data">   1431</td>
+<td class="r b Data">   2024</td>
+<td class="r b Data">   8687</td>
+<td class="r b Data">  13027</td>
+<td class="r b Data">      6</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">3000-                  </th>
+<td class="r b Data"> 254829</td>
+<td class="r b Data">  18715</td>
+<td class="r b Data">  10132</td>
+<td class="r b Data">  17096</td>
+<td class="r b Data">  22545</td>
+<td class="r b Data">   5111</td>
+<td class="r b Data">   7327</td>
+<td class="r b Data">   2837</td>
+<td class="r b Data">   1124</td>
+<td class="r b Data">   4893</td>
+<td class="r b Data">  10013</td>
+<td class="r b Data">  22226</td>
+<td class="r b Data">  55115</td>
+<td class="r b Data">    990</td>
+<td class="r b Data">   2530</td>
+<td class="r b Data">   1859</td>
+<td class="r b Data">    652</td>
+<td class="r b Data">  15522</td>
+<td class="r b Data">   6245</td>
+<td class="r b Data">   9150</td>
+<td class="r b Data">   8966</td>
+<td class="r b Data">    710</td>
+<td class="r b Data">   8309</td>
+<td class="r b Data">    994</td>
+<td class="r b Data">   1937</td>
+<td class="r b Data">   8448</td>
+<td class="r b Data">  11383</td>
+<td class="r b Data">0</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">Mittlerer Hubraum<BR> Cylindrée moyenne</th>
+<td class="r b Data">   1964</td>
+<td class="r b Data">   1883</td>
+<td class="r b Data">   1951</td>
+<td class="r b Data">   1974</td>
+<td class="r b Data">   1918</td>
+<td class="r b Data">   1826</td>
+<td class="r b Data">   1926</td>
+<td class="r b Data">   1810</td>
+<td class="r b Data">   1808</td>
+<td class="r b Data">   2023</td>
+<td class="r b Data">   2009</td>
+<td class="r b Data">   1991</td>
+<td class="r b Data">   2054</td>
+<td class="r b Data">   1949</td>
+<td class="r b Data">   1993</td>
+<td class="r b Data">   2009</td>
+<td class="r b Data">   2078</td>
+<td class="r b Data">   1992</td>
+<td class="r b Data">   2040</td>
+<td class="r b Data">   1977</td>
+<td class="r b Data">   1915</td>
+<td class="r b Data">   1925</td>
+<td class="r b Data">   2109</td>
+<td class="r b Data">   1954</td>
+<td class="r b Data">   2027</td>
+<td class="r b Data">   2221</td>
+<td class="r b Data">   1858</td>
+<td class="r b Data">   1968</td>
+</tr>
+<tr>
+<th class="l t RowHeader" style=" background-color: #808080;" scope="row">Getriebe  <BR> Transmission</th>
+<td class="r b Data" rowspan="2"> 922919</td>
+<td class="r b Data" rowspan="2">  66948</td>
+<td class="r b Data" rowspan="2">  21907</td>
+<td class="r b Data" rowspan="2">  48279</td>
+<td class="r b Data" rowspan="2">  94782</td>
+<td class="r b Data" rowspan="2">  20518</td>
+<td class="r b Data" rowspan="2">  30805</td>
+<td class="r b Data" rowspan="2">  11166</td>
+<td class="r b Data" rowspan="2">   3977</td>
+<td class="r b Data" rowspan="2">  21149</td>
+<td class="r b Data" rowspan="2">  33149</td>
+<td class="r b Data" rowspan="2">  96539</td>
+<td class="r b Data" rowspan="2"> 222285</td>
+<td class="r b Data" rowspan="2">   2505</td>
+<td class="r b Data" rowspan="2">  12216</td>
+<td class="r b Data" rowspan="2">   4612</td>
+<td class="r b Data" rowspan="2">   1378</td>
+<td class="r b Data" rowspan="2">  55284</td>
+<td class="r b Data" rowspan="2">  18649</td>
+<td class="r b Data" rowspan="2">  31226</td>
+<td class="r b Data" rowspan="2">  39932</td>
+<td class="r b Data" rowspan="2">   1649</td>
+<td class="r b Data" rowspan="2">  19256</td>
+<td class="r b Data" rowspan="2">   2313</td>
+<td class="r b Data" rowspan="2">   3970</td>
+<td class="r b Data" rowspan="2">  22552</td>
+<td class="r b Data" rowspan="2">  35848</td>
+<td class="r b Data" rowspan="2">     25</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">automatisch / automatique                    </th>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">hydrostatisch / hydrostatique                </th>
+<td class="r b Data">    388</td>
+<td class="r b Data">     13</td>
+<td class="r b Data">     32</td>
+<td class="r b Data">     21</td>
+<td class="r b Data">     21</td>
+<td class="r b Data">      3</td>
+<td class="r b Data">      4</td>
+<td class="r b Data">      1</td>
+<td class="r b Data">      1</td>
+<td class="r b Data">      5</td>
+<td class="r b Data">     14</td>
+<td class="r b Data">     22</td>
+<td class="r b Data">     90</td>
+<td class="r b Data">      4</td>
+<td class="r b Data">      4</td>
+<td class="r b Data">      4</td>
+<td class="r b Data">      9</td>
+<td class="r b Data">     61</td>
+<td class="r b Data">      9</td>
+<td class="r b Data">     37</td>
+<td class="r b Data">      8</td>
+<td class="r b Data">      1</td>
+<td class="r b Data">      9</td>
+<td class="r b Data">      2</td>
+<td class="r b Data">      3</td>
+<td class="r b Data">      8</td>
+<td class="r b Data">      2</td>
+<td class="r b Data">0</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">mechanisch / manuelle                        </th>
+<td class="r b Data">3159514</td>
+<td class="r b Data"> 301359</td>
+<td class="r b Data"> 167845</td>
+<td class="r b Data"> 166599</td>
+<td class="r b Data"> 382605</td>
+<td class="r b Data"> 135665</td>
+<td class="r b Data"> 109156</td>
+<td class="r b Data">  79638</td>
+<td class="r b Data">  34987</td>
+<td class="r b Data">  42168</td>
+<td class="r b Data"> 104486</td>
+<td class="r b Data"> 243936</td>
+<td class="r b Data"> 440366</td>
+<td class="r b Data">  18539</td>
+<td class="r b Data">  28448</td>
+<td class="r b Data">  23444</td>
+<td class="r b Data">   7052</td>
+<td class="r b Data"> 193912</td>
+<td class="r b Data">  82728</td>
+<td class="r b Data"> 114000</td>
+<td class="r b Data"> 147559</td>
+<td class="r b Data">  16252</td>
+<td class="r b Data">  67644</td>
+<td class="r b Data">  17580</td>
+<td class="r b Data">  20041</td>
+<td class="r b Data">  44811</td>
+<td class="r b Data"> 168675</td>
+<td class="r b Data">     19</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">stufenlos / transmission à variation continue</th>
+<td class="r b Data">  66272</td>
+<td class="r b Data">   6984</td>
+<td class="r b Data">   1718</td>
+<td class="r b Data">   3246</td>
+<td class="r b Data">   5421</td>
+<td class="r b Data">   2586</td>
+<td class="r b Data">   2242</td>
+<td class="r b Data">    889</td>
+<td class="r b Data">    309</td>
+<td class="r b Data">    872</td>
+<td class="r b Data">   2091</td>
+<td class="r b Data">   7470</td>
+<td class="r b Data">  15578</td>
+<td class="r b Data">    155</td>
+<td class="r b Data">    760</td>
+<td class="r b Data">    280</td>
+<td class="r b Data">     69</td>
+<td class="r b Data">   2540</td>
+<td class="r b Data">    671</td>
+<td class="r b Data">   1625</td>
+<td class="r b Data">   3408</td>
+<td class="r b Data">    116</td>
+<td class="r b Data">   1550</td>
+<td class="r b Data">    208</td>
+<td class="r b Data">    347</td>
+<td class="r b Data">   1563</td>
+<td class="r b Data">   3574</td>
+<td class="r b Data">0</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">zz.übrige / autre                            </th>
+<td class="r b Data">  13910</td>
+<td class="r b Data">     95</td>
+<td class="r b Data">      6</td>
+<td class="r b Data">    125</td>
+<td class="r b Data">   5539</td>
+<td class="r b Data">    130</td>
+<td class="r b Data">    327</td>
+<td class="r b Data">     19</td>
+<td class="r b Data">    138</td>
+<td class="r b Data">   2329</td>
+<td class="r b Data">    142</td>
+<td class="r b Data">    150</td>
+<td class="r b Data">   3068</td>
+<td class="r b Data">     39</td>
+<td class="r b Data">      9</td>
+<td class="r b Data">     36</td>
+<td class="r b Data">     10</td>
+<td class="r b Data">   1041</td>
+<td class="r b Data">    251</td>
+<td class="r b Data">    168</td>
+<td class="r b Data">     71</td>
+<td class="r b Data">      1</td>
+<td class="r b Data">    134</td>
+<td class="r b Data">      7</td>
+<td class="r b Data">      8</td>
+<td class="r b Data">     25</td>
+<td class="r b Data">     42</td>
+<td class="r b Data">0</td>
+</tr>
+<tr>
+<th class="l t RowHeader" style=" background-color: #808080;" scope="row">Karosserie <BR> Carrosserie</th>
+<td class="r b Data" rowspan="2"> 212899</td>
+<td class="r b Data" rowspan="2">  16560</td>
+<td class="r b Data" rowspan="2">   6282</td>
+<td class="r b Data" rowspan="2">  10814</td>
+<td class="r b Data" rowspan="2">  20356</td>
+<td class="r b Data" rowspan="2">   5412</td>
+<td class="r b Data" rowspan="2">   7232</td>
+<td class="r b Data" rowspan="2">   2919</td>
+<td class="r b Data" rowspan="2">    871</td>
+<td class="r b Data" rowspan="2">   3669</td>
+<td class="r b Data" rowspan="2">   8821</td>
+<td class="r b Data" rowspan="2">  21039</td>
+<td class="r b Data" rowspan="2">  44675</td>
+<td class="r b Data" rowspan="2">    875</td>
+<td class="r b Data" rowspan="2">   2273</td>
+<td class="r b Data" rowspan="2">   1459</td>
+<td class="r b Data" rowspan="2">    370</td>
+<td class="r b Data" rowspan="2">  12852</td>
+<td class="r b Data" rowspan="2">   4135</td>
+<td class="r b Data" rowspan="2">   9091</td>
+<td class="r b Data" rowspan="2">   8781</td>
+<td class="r b Data" rowspan="2">    486</td>
+<td class="r b Data" rowspan="2">   6305</td>
+<td class="r b Data" rowspan="2">    912</td>
+<td class="r b Data" rowspan="2">   1440</td>
+<td class="r b Data" rowspan="2">   5257</td>
+<td class="r b Data" rowspan="2">  10011</td>
+<td class="r b Data" rowspan="2">      2</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">Cabriolet / cabriolet</th>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">Kombi / break        </th>
+<td class="r b Data"> 970383</td>
+<td class="r b Data">  72660</td>
+<td class="r b Data">  41864</td>
+<td class="r b Data">  35913</td>
+<td class="r b Data"> 120424</td>
+<td class="r b Data">  30135</td>
+<td class="r b Data">  31717</td>
+<td class="r b Data">  16087</td>
+<td class="r b Data">   6976</td>
+<td class="r b Data">  16075</td>
+<td class="r b Data">  31751</td>
+<td class="r b Data">  82831</td>
+<td class="r b Data"> 172889</td>
+<td class="r b Data">   6340</td>
+<td class="r b Data">  10248</td>
+<td class="r b Data">   8688</td>
+<td class="r b Data">   2780</td>
+<td class="r b Data">  64265</td>
+<td class="r b Data">  34186</td>
+<td class="r b Data">  34455</td>
+<td class="r b Data">  46200</td>
+<td class="r b Data">   5917</td>
+<td class="r b Data">  23957</td>
+<td class="r b Data">   5818</td>
+<td class="r b Data">   6145</td>
+<td class="r b Data">  20173</td>
+<td class="r b Data">  41879</td>
+<td class="r b Data">     10</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">Limousine / limousine</th>
+<td class="r b Data">2979721</td>
+<td class="r b Data"> 286179</td>
+<td class="r b Data"> 143362</td>
+<td class="r b Data"> 171543</td>
+<td class="r b Data"> 347588</td>
+<td class="r b Data"> 123355</td>
+<td class="r b Data"> 103585</td>
+<td class="r b Data">  72707</td>
+<td class="r b Data">  31565</td>
+<td class="r b Data">  46779</td>
+<td class="r b Data">  99310</td>
+<td class="r b Data"> 244247</td>
+<td class="r b Data"> 463823</td>
+<td class="r b Data">  14027</td>
+<td class="r b Data">  28916</td>
+<td class="r b Data">  18229</td>
+<td class="r b Data">   5368</td>
+<td class="r b Data"> 175721</td>
+<td class="r b Data">  63987</td>
+<td class="r b Data"> 103510</td>
+<td class="r b Data"> 135997</td>
+<td class="r b Data">  11616</td>
+<td class="r b Data">  58331</td>
+<td class="r b Data">  13380</td>
+<td class="r b Data">  16784</td>
+<td class="r b Data">  43529</td>
+<td class="r b Data"> 156251</td>
+<td class="r b Data">     32</td>
+</tr>
+<tr>
+<th class="l t RowHeader" style=" background-color: #808080;" scope="row">Treibstoff <BR> Carburant</th>
+<td class="r b Data" rowspan="2">3301501</td>
+<td class="r b Data" rowspan="2"> 290234</td>
+<td class="r b Data" rowspan="2"> 149894</td>
+<td class="r b Data" rowspan="2"> 176088</td>
+<td class="r b Data" rowspan="2"> 389647</td>
+<td class="r b Data" rowspan="2"> 127558</td>
+<td class="r b Data" rowspan="2"> 117263</td>
+<td class="r b Data" rowspan="2">  72711</td>
+<td class="r b Data" rowspan="2">  32183</td>
+<td class="r b Data" rowspan="2">  50696</td>
+<td class="r b Data" rowspan="2"> 113189</td>
+<td class="r b Data" rowspan="2"> 280986</td>
+<td class="r b Data" rowspan="2"> 540203</td>
+<td class="r b Data" rowspan="2">  16732</td>
+<td class="r b Data" rowspan="2">  33574</td>
+<td class="r b Data" rowspan="2">  22633</td>
+<td class="r b Data" rowspan="2">   6691</td>
+<td class="r b Data" rowspan="2"> 200656</td>
+<td class="r b Data" rowspan="2">  75969</td>
+<td class="r b Data" rowspan="2"> 120463</td>
+<td class="r b Data" rowspan="2"> 153008</td>
+<td class="r b Data" rowspan="2">  14114</td>
+<td class="r b Data" rowspan="2">  70761</td>
+<td class="r b Data" rowspan="2">  15652</td>
+<td class="r b Data" rowspan="2">  19067</td>
+<td class="r b Data" rowspan="2">  51238</td>
+<td class="r b Data" rowspan="2"> 160254</td>
+<td class="r b Data" rowspan="2">     37</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">Benzin / essence                             </th>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">Benzin-Ethanol/ essence-éthanol              </th>
+<td class="r b Data">   3557</td>
+<td class="r b Data">    235</td>
+<td class="r b Data">     83</td>
+<td class="r b Data">    183</td>
+<td class="r b Data">    445</td>
+<td class="r b Data">    121</td>
+<td class="r b Data">    130</td>
+<td class="r b Data">     77</td>
+<td class="r b Data">     18</td>
+<td class="r b Data">     75</td>
+<td class="r b Data">    111</td>
+<td class="r b Data">    322</td>
+<td class="r b Data">    702</td>
+<td class="r b Data">     17</td>
+<td class="r b Data">     63</td>
+<td class="r b Data">     22</td>
+<td class="r b Data">      2</td>
+<td class="r b Data">    236</td>
+<td class="r b Data">     39</td>
+<td class="r b Data">    153</td>
+<td class="r b Data">    229</td>
+<td class="r b Data">      9</td>
+<td class="r b Data">     69</td>
+<td class="r b Data">     28</td>
+<td class="r b Data">     34</td>
+<td class="r b Data">     72</td>
+<td class="r b Data">     82</td>
+<td class="r b Data">0</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">Benzin-elektrisch / essence-électrique       </th>
+<td class="r b Data">  22001</td>
+<td class="r b Data">   2111</td>
+<td class="r b Data">    626</td>
+<td class="r b Data">   1446</td>
+<td class="r b Data">   2128</td>
+<td class="r b Data">    751</td>
+<td class="r b Data">    576</td>
+<td class="r b Data">    431</td>
+<td class="r b Data">    142</td>
+<td class="r b Data">    379</td>
+<td class="r b Data">    816</td>
+<td class="r b Data">   1978</td>
+<td class="r b Data">   4917</td>
+<td class="r b Data">     62</td>
+<td class="r b Data">    199</td>
+<td class="r b Data">    114</td>
+<td class="r b Data">     20</td>
+<td class="r b Data">   1014</td>
+<td class="r b Data">    271</td>
+<td class="r b Data">    659</td>
+<td class="r b Data">   1042</td>
+<td class="r b Data">     40</td>
+<td class="r b Data">    518</td>
+<td class="r b Data">     91</td>
+<td class="r b Data">    161</td>
+<td class="r b Data">    520</td>
+<td class="r b Data">    989</td>
+<td class="r b Data">0</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">Diesel / diesel                              </th>
+<td class="r b Data"> 827094</td>
+<td class="r b Data">  82088</td>
+<td class="r b Data">  40569</td>
+<td class="r b Data">  40231</td>
+<td class="r b Data">  95091</td>
+<td class="r b Data">  30329</td>
+<td class="r b Data">  24285</td>
+<td class="r b Data">  18365</td>
+<td class="r b Data">   7019</td>
+<td class="r b Data">  15081</td>
+<td class="r b Data">  25370</td>
+<td class="r b Data">  64085</td>
+<td class="r b Data"> 133654</td>
+<td class="r b Data">   4398</td>
+<td class="r b Data">   7457</td>
+<td class="r b Data">   5566</td>
+<td class="r b Data">   1800</td>
+<td class="r b Data">  50439</td>
+<td class="r b Data">  25962</td>
+<td class="r b Data">  25401</td>
+<td class="r b Data">  36315</td>
+<td class="r b Data">   3849</td>
+<td class="r b Data">  17147</td>
+<td class="r b Data">   4324</td>
+<td class="r b Data">   5077</td>
+<td class="r b Data">  16957</td>
+<td class="r b Data">  46228</td>
+<td class="r b Data">      7</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">Diesel-elektrisch / diesel-électrique        </th>
+<td class="r b Data">     31</td>
+<td class="r b Data">0</td>
+<td class="r b Data">0</td>
+<td class="r b Data">     16</td>
+<td class="r b Data">      2</td>
+<td class="r b Data">0</td>
+<td class="r b Data">0</td>
+<td class="r b Data">0</td>
+<td class="r b Data">0</td>
+<td class="r b Data">0</td>
+<td class="r b Data">0</td>
+<td class="r b Data">0</td>
+<td class="r b Data">      1</td>
+<td class="r b Data">0</td>
+<td class="r b Data">0</td>
+<td class="r b Data">      1</td>
+<td class="r b Data">0</td>
+<td class="r b Data">      2</td>
+<td class="r b Data">0</td>
+<td class="r b Data">      7</td>
+<td class="r b Data">      1</td>
+<td class="r b Data">      1</td>
+<td class="r b Data">0</td>
+<td class="r b Data">0</td>
+<td class="r b Data">0</td>
+<td class="r b Data">0</td>
+<td class="r b Data">0</td>
+<td class="r b Data">0</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">Erdgas (CNG) / gaz (CNC)                     </th>
+<td class="r b Data">   2639</td>
+<td class="r b Data">    187</td>
+<td class="r b Data">     38</td>
+<td class="r b Data">     69</td>
+<td class="r b Data">    382</td>
+<td class="r b Data">     55</td>
+<td class="r b Data">     86</td>
+<td class="r b Data">     41</td>
+<td class="r b Data">     15</td>
+<td class="r b Data">    105</td>
+<td class="r b Data">    190</td>
+<td class="r b Data">    218</td>
+<td class="r b Data">    468</td>
+<td class="r b Data">     10</td>
+<td class="r b Data">     39</td>
+<td class="r b Data">     21</td>
+<td class="r b Data">      1</td>
+<td class="r b Data">    226</td>
+<td class="r b Data">     26</td>
+<td class="r b Data">    204</td>
+<td class="r b Data">     97</td>
+<td class="r b Data">      2</td>
+<td class="r b Data">     27</td>
+<td class="r b Data">      6</td>
+<td class="r b Data">     10</td>
+<td class="r b Data">     40</td>
+<td class="r b Data">     76</td>
+<td class="r b Data">0</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">Ethanol / éthanol                            </th>
+<td class="r b Data">      6</td>
+<td class="r b Data">0</td>
+<td class="r b Data">0</td>
+<td class="r b Data">0</td>
+<td class="r b Data">0</td>
+<td class="r b Data">0</td>
+<td class="r b Data">0</td>
+<td class="r b Data">0</td>
+<td class="r b Data">0</td>
+<td class="r b Data">      1</td>
+<td class="r b Data">0</td>
+<td class="r b Data">      1</td>
+<td class="r b Data">      2</td>
+<td class="r b Data">0</td>
+<td class="r b Data">0</td>
+<td class="r b Data">0</td>
+<td class="r b Data">0</td>
+<td class="r b Data">0</td>
+<td class="r b Data">0</td>
+<td class="r b Data">      1</td>
+<td class="r b Data">0</td>
+<td class="r b Data">0</td>
+<td class="r b Data">0</td>
+<td class="r b Data">0</td>
+<td class="r b Data">      1</td>
+<td class="r b Data">0</td>
+<td class="r b Data">0</td>
+<td class="r b Data">0</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">Flüssiggas(LPG)-Benzin / gaz(GPL)-essence    </th>
+<td class="r b Data">    140</td>
+<td class="r b Data">     10</td>
+<td class="r b Data">      1</td>
+<td class="r b Data">      1</td>
+<td class="r b Data">      2</td>
+<td class="r b Data">0</td>
+<td class="r b Data">      5</td>
+<td class="r b Data">      4</td>
+<td class="r b Data">0</td>
+<td class="r b Data">      3</td>
+<td class="r b Data">0</td>
+<td class="r b Data">      9</td>
+<td class="r b Data">     27</td>
+<td class="r b Data">0</td>
+<td class="r b Data">0</td>
+<td class="r b Data">      1</td>
+<td class="r b Data">0</td>
+<td class="r b Data">      7</td>
+<td class="r b Data">      3</td>
+<td class="r b Data">      6</td>
+<td class="r b Data">     32</td>
+<td class="r b Data">0</td>
+<td class="r b Data">      3</td>
+<td class="r b Data">      1</td>
+<td class="r b Data">      3</td>
+<td class="r b Data">      2</td>
+<td class="r b Data">     20</td>
+<td class="r b Data">0</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">Gas(CNG)-Benzin / gaz(CNC)-essence           </th>
+<td class="r b Data">   3666</td>
+<td class="r b Data">    405</td>
+<td class="r b Data">     73</td>
+<td class="r b Data">    191</td>
+<td class="r b Data">    353</td>
+<td class="r b Data">     65</td>
+<td class="r b Data">    132</td>
+<td class="r b Data">     59</td>
+<td class="r b Data">     26</td>
+<td class="r b Data">    131</td>
+<td class="r b Data">    166</td>
+<td class="r b Data">    314</td>
+<td class="r b Data">    845</td>
+<td class="r b Data">     21</td>
+<td class="r b Data">     68</td>
+<td class="r b Data">     16</td>
+<td class="r b Data">      3</td>
+<td class="r b Data">    215</td>
+<td class="r b Data">     25</td>
+<td class="r b Data">    142</td>
+<td class="r b Data">    161</td>
+<td class="r b Data">      2</td>
+<td class="r b Data">     38</td>
+<td class="r b Data">      6</td>
+<td class="r b Data">     13</td>
+<td class="r b Data">     39</td>
+<td class="r b Data">    157</td>
+<td class="r b Data">0</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">Gas(CNG/LPG) / gaz(GNC/GPL)                  </th>
+<td class="r b Data">    899</td>
+<td class="r b Data">     67</td>
+<td class="r b Data">0</td>
+<td class="r b Data">      2</td>
+<td class="r b Data">    190</td>
+<td class="r b Data">0</td>
+<td class="r b Data">     34</td>
+<td class="r b Data">     18</td>
+<td class="r b Data">      6</td>
+<td class="r b Data">     28</td>
+<td class="r b Data">      4</td>
+<td class="r b Data">    140</td>
+<td class="r b Data">    284</td>
+<td class="r b Data">0</td>
+<td class="r b Data">     28</td>
+<td class="r b Data">0</td>
+<td class="r b Data">0</td>
+<td class="r b Data">      4</td>
+<td class="r b Data">0</td>
+<td class="r b Data">      4</td>
+<td class="r b Data">     48</td>
+<td class="r b Data">0</td>
+<td class="r b Data">      7</td>
+<td class="r b Data">      1</td>
+<td class="r b Data">      3</td>
+<td class="r b Data">     24</td>
+<td class="r b Data">      7</td>
+<td class="r b Data">0</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">Methanol / méthanol                          </th>
+<td class="r b Data">     95</td>
+<td class="r b Data">     12</td>
+<td class="r b Data">      6</td>
+<td class="r b Data">     12</td>
+<td class="r b Data">     17</td>
+<td class="r b Data">     11</td>
+<td class="r b Data">      1</td>
+<td class="r b Data">0</td>
+<td class="r b Data">      2</td>
+<td class="r b Data">      1</td>
+<td class="r b Data">      4</td>
+<td class="r b Data">      4</td>
+<td class="r b Data">     11</td>
+<td class="r b Data">0</td>
+<td class="r b Data">      1</td>
+<td class="r b Data">0</td>
+<td class="r b Data">      1</td>
+<td class="r b Data">      5</td>
+<td class="r b Data">0</td>
+<td class="r b Data">      3</td>
+<td class="r b Data">      2</td>
+<td class="r b Data">0</td>
+<td class="r b Data">      2</td>
+<td class="r b Data">0</td>
+<td class="r b Data">0</td>
+<td class="r b Data">0</td>
+<td class="r b Data">0</td>
+<td class="r b Data">0</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">Petrol / pétrole                             </th>
+<td class="r b Data">      4</td>
+<td class="r b Data">0</td>
+<td class="r b Data">0</td>
+<td class="r b Data">0</td>
+<td class="r b Data">      2</td>
+<td class="r b Data">0</td>
+<td class="r b Data">      1</td>
+<td class="r b Data">0</td>
+<td class="r b Data">0</td>
+<td class="r b Data">0</td>
+<td class="r b Data">0</td>
+<td class="r b Data">0</td>
+<td class="r b Data">      1</td>
+<td class="r b Data">0</td>
+<td class="r b Data">0</td>
+<td class="r b Data">0</td>
+<td class="r b Data">0</td>
+<td class="r b Data">0</td>
+<td class="r b Data">0</td>
+<td class="r b Data">0</td>
+<td class="r b Data">0</td>
+<td class="r b Data">0</td>
+<td class="r b Data">0</td>
+<td class="r b Data">0</td>
+<td class="r b Data">0</td>
+<td class="r b Data">0</td>
+<td class="r b Data">0</td>
+<td class="r b Data">0</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">Wasserstoff-elektrisch / hydrogène-électrique</th>
+<td class="r b Data">      1</td>
+<td class="r b Data">0</td>
+<td class="r b Data">0</td>
+<td class="r b Data">0</td>
+<td class="r b Data">0</td>
+<td class="r b Data">0</td>
+<td class="r b Data">0</td>
+<td class="r b Data">0</td>
+<td class="r b Data">0</td>
+<td class="r b Data">0</td>
+<td class="r b Data">0</td>
+<td class="r b Data">0</td>
+<td class="r b Data">0</td>
+<td class="r b Data">0</td>
+<td class="r b Data">0</td>
+<td class="r b Data">0</td>
+<td class="r b Data">0</td>
+<td class="r b Data">      1</td>
+<td class="r b Data">0</td>
+<td class="r b Data">0</td>
+<td class="r b Data">0</td>
+<td class="r b Data">0</td>
+<td class="r b Data">0</td>
+<td class="r b Data">0</td>
+<td class="r b Data">0</td>
+<td class="r b Data">0</td>
+<td class="r b Data">0</td>
+<td class="r b Data">0</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">elektrisch / électrique                      </th>
+<td class="r b Data">   1044</td>
+<td class="r b Data">     38</td>
+<td class="r b Data">    217</td>
+<td class="r b Data">     31</td>
+<td class="r b Data">    108</td>
+<td class="r b Data">     12</td>
+<td class="r b Data">     19</td>
+<td class="r b Data">      7</td>
+<td class="r b Data">      1</td>
+<td class="r b Data">     18</td>
+<td class="r b Data">     31</td>
+<td class="r b Data">     47</td>
+<td class="r b Data">    211</td>
+<td class="r b Data">      1</td>
+<td class="r b Data">      6</td>
+<td class="r b Data">      2</td>
+<td class="r b Data">0</td>
+<td class="r b Data">     30</td>
+<td class="r b Data">     12</td>
+<td class="r b Data">     12</td>
+<td class="r b Data">     38</td>
+<td class="r b Data">      2</td>
+<td class="r b Data">     15</td>
+<td class="r b Data">      1</td>
+<td class="r b Data">0</td>
+<td class="r b Data">     65</td>
+<td class="r b Data">    120</td>
+<td class="r b Data">0</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">nicht spezifiziert / non spécifié            </th>
+<td class="r b Data">    325</td>
+<td class="r b Data">     12</td>
+<td class="r b Data">      1</td>
+<td class="r b Data">0</td>
+<td class="r b Data">      1</td>
+<td class="r b Data">0</td>
+<td class="r b Data">      2</td>
+<td class="r b Data">0</td>
+<td class="r b Data">0</td>
+<td class="r b Data">      5</td>
+<td class="r b Data">      1</td>
+<td class="r b Data">     13</td>
+<td class="r b Data">     61</td>
+<td class="r b Data">      1</td>
+<td class="r b Data">      2</td>
+<td class="r b Data">0</td>
+<td class="r b Data">0</td>
+<td class="r b Data">      3</td>
+<td class="r b Data">      1</td>
+<td class="r b Data">      1</td>
+<td class="r b Data">      5</td>
+<td class="r b Data">0</td>
+<td class="r b Data">      6</td>
+<td class="r b Data">0</td>
+<td class="r b Data">0</td>
+<td class="r b Data">      2</td>
+<td class="r b Data">    208</td>
+<td class="r b Data">0</td>
+</tr>
+<tr>
+<th class="l t RowHeader" style=" background-color: #808080;" scope="row">Katalysator <BR> Catalyseur</th>
+<td class="r b Data" rowspan="2">4018697</td>
+<td class="r b Data" rowspan="2"> 365308</td>
+<td class="r b Data" rowspan="2"> 185016</td>
+<td class="r b Data" rowspan="2"> 209808</td>
+<td class="r b Data" rowspan="2"> 472113</td>
+<td class="r b Data" rowspan="2"> 155091</td>
+<td class="r b Data" rowspan="2"> 138175</td>
+<td class="r b Data" rowspan="2">  89630</td>
+<td class="r b Data" rowspan="2">  38195</td>
+<td class="r b Data" rowspan="2">  63731</td>
+<td class="r b Data" rowspan="2"> 135114</td>
+<td class="r b Data" rowspan="2"> 335637</td>
+<td class="r b Data" rowspan="2"> 652621</td>
+<td class="r b Data" rowspan="2">  20491</td>
+<td class="r b Data" rowspan="2">  39504</td>
+<td class="r b Data" rowspan="2">  27328</td>
+<td class="r b Data" rowspan="2">   8221</td>
+<td class="r b Data" rowspan="2"> 244654</td>
+<td class="r b Data" rowspan="2">  97763</td>
+<td class="r b Data" rowspan="2"> 141774</td>
+<td class="r b Data" rowspan="2"> 185630</td>
+<td class="r b Data" rowspan="2">  17379</td>
+<td class="r b Data" rowspan="2">  84664</td>
+<td class="r b Data" rowspan="2">  19370</td>
+<td class="r b Data" rowspan="2">  23515</td>
+<td class="r b Data" rowspan="2">  66512</td>
+<td class="r b Data" rowspan="2"> 201428</td>
+<td class="r b Data" rowspan="2">     25</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">mit / avec </th>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">ohne / sans</th>
+<td class="r b Data"> 144306</td>
+<td class="r b Data">  10091</td>
+<td class="r b Data">   6492</td>
+<td class="r b Data">   8462</td>
+<td class="r b Data">  16255</td>
+<td class="r b Data">   3811</td>
+<td class="r b Data">   4359</td>
+<td class="r b Data">   2083</td>
+<td class="r b Data">   1217</td>
+<td class="r b Data">   2792</td>
+<td class="r b Data">   4768</td>
+<td class="r b Data">  12480</td>
+<td class="r b Data">  28766</td>
+<td class="r b Data">    751</td>
+<td class="r b Data">   1933</td>
+<td class="r b Data">   1048</td>
+<td class="r b Data">    297</td>
+<td class="r b Data">   8184</td>
+<td class="r b Data">   4545</td>
+<td class="r b Data">   5282</td>
+<td class="r b Data">   5348</td>
+<td class="r b Data">    640</td>
+<td class="r b Data">   3929</td>
+<td class="r b Data">    740</td>
+<td class="r b Data">    854</td>
+<td class="r b Data">   2447</td>
+<td class="r b Data">   6713</td>
+<td class="r b Data">     19</td>
+</tr>
+<tr>
+<th class="l t RowHeader" style=" background-color: #808080;" scope="row">Partikelfilter <BR> Filtre à particules</th>
+<td class="r b Data" rowspan="2"> 444514</td>
+<td class="r b Data" rowspan="2">  48617</td>
+<td class="r b Data" rowspan="2">  19105</td>
+<td class="r b Data" rowspan="2">  21710</td>
+<td class="r b Data" rowspan="2">  49616</td>
+<td class="r b Data" rowspan="2">  16064</td>
+<td class="r b Data" rowspan="2">  13156</td>
+<td class="r b Data" rowspan="2">   9339</td>
+<td class="r b Data" rowspan="2">   3590</td>
+<td class="r b Data" rowspan="2">   9056</td>
+<td class="r b Data" rowspan="2">  14349</td>
+<td class="r b Data" rowspan="2">  34460</td>
+<td class="r b Data" rowspan="2">  74970</td>
+<td class="r b Data" rowspan="2">   2085</td>
+<td class="r b Data" rowspan="2">   3548</td>
+<td class="r b Data" rowspan="2">   2868</td>
+<td class="r b Data" rowspan="2">    897</td>
+<td class="r b Data" rowspan="2">  25145</td>
+<td class="r b Data" rowspan="2">  11931</td>
+<td class="r b Data" rowspan="2">  12821</td>
+<td class="r b Data" rowspan="2">  19410</td>
+<td class="r b Data" rowspan="2">   1724</td>
+<td class="r b Data" rowspan="2">   9091</td>
+<td class="r b Data" rowspan="2">   2057</td>
+<td class="r b Data" rowspan="2">   2720</td>
+<td class="r b Data" rowspan="2">  11295</td>
+<td class="r b Data" rowspan="2">  24890</td>
+<td class="r b Data" rowspan="2">0</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">mit / avec </th>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">ohne / sans</th>
+<td class="r b Data">3718489</td>
+<td class="r b Data"> 326782</td>
+<td class="r b Data"> 172403</td>
+<td class="r b Data"> 196560</td>
+<td class="r b Data"> 438752</td>
+<td class="r b Data"> 142838</td>
+<td class="r b Data"> 129378</td>
+<td class="r b Data">  82374</td>
+<td class="r b Data">  35822</td>
+<td class="r b Data">  57467</td>
+<td class="r b Data"> 125533</td>
+<td class="r b Data"> 313657</td>
+<td class="r b Data"> 606417</td>
+<td class="r b Data">  19157</td>
+<td class="r b Data">  37889</td>
+<td class="r b Data">  25508</td>
+<td class="r b Data">   7621</td>
+<td class="r b Data"> 227693</td>
+<td class="r b Data">  90377</td>
+<td class="r b Data"> 134235</td>
+<td class="r b Data"> 171568</td>
+<td class="r b Data">  16295</td>
+<td class="r b Data">  79502</td>
+<td class="r b Data">  18053</td>
+<td class="r b Data">  21649</td>
+<td class="r b Data">  57664</td>
+<td class="r b Data"> 183251</td>
+<td class="r b Data">     44</td>
+</tr>
+<tr>
+<th class="l t RowHeader" style=" background-color: #808080;" scope="row">Leistung <BR> Puissance [KW]</th>
+<td class="r b Data" rowspan="2">  79606</td>
+<td class="r b Data" rowspan="2">   6886</td>
+<td class="r b Data" rowspan="2">   3425</td>
+<td class="r b Data" rowspan="2">   6182</td>
+<td class="r b Data" rowspan="2">   9240</td>
+<td class="r b Data" rowspan="2">   2953</td>
+<td class="r b Data" rowspan="2">   3002</td>
+<td class="r b Data" rowspan="2">   2031</td>
+<td class="r b Data" rowspan="2">    848</td>
+<td class="r b Data" rowspan="2">   1373</td>
+<td class="r b Data" rowspan="2">   2774</td>
+<td class="r b Data" rowspan="2">   5601</td>
+<td class="r b Data" rowspan="2">  11135</td>
+<td class="r b Data" rowspan="2">    388</td>
+<td class="r b Data" rowspan="2">    873</td>
+<td class="r b Data" rowspan="2">    604</td>
+<td class="r b Data" rowspan="2">    125</td>
+<td class="r b Data" rowspan="2">   4317</td>
+<td class="r b Data" rowspan="2">   1741</td>
+<td class="r b Data" rowspan="2">   3103</td>
+<td class="r b Data" rowspan="2">   3035</td>
+<td class="r b Data" rowspan="2">    277</td>
+<td class="r b Data" rowspan="2">   1328</td>
+<td class="r b Data" rowspan="2">    286</td>
+<td class="r b Data" rowspan="2">    292</td>
+<td class="r b Data" rowspan="2">    790</td>
+<td class="r b Data" rowspan="2">   6997</td>
+<td class="r b Data" rowspan="2">0</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">001-040                          </th>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">041-060                          </th>
+<td class="r b Data"> 546163</td>
+<td class="r b Data">  57187</td>
+<td class="r b Data">  24690</td>
+<td class="r b Data">  35220</td>
+<td class="r b Data">  65321</td>
+<td class="r b Data">  25348</td>
+<td class="r b Data">  19877</td>
+<td class="r b Data">  15130</td>
+<td class="r b Data">   6489</td>
+<td class="r b Data">   7705</td>
+<td class="r b Data">  16438</td>
+<td class="r b Data">  41324</td>
+<td class="r b Data">  74125</td>
+<td class="r b Data">   2540</td>
+<td class="r b Data">   5485</td>
+<td class="r b Data">   3278</td>
+<td class="r b Data">    830</td>
+<td class="r b Data">  30196</td>
+<td class="r b Data">   9535</td>
+<td class="r b Data">  19619</td>
+<td class="r b Data">  25918</td>
+<td class="r b Data">   2009</td>
+<td class="r b Data">   8707</td>
+<td class="r b Data">   2322</td>
+<td class="r b Data">   2971</td>
+<td class="r b Data">   5680</td>
+<td class="r b Data">  38218</td>
+<td class="r b Data">      1</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">061-080                          </th>
+<td class="r b Data"> 870036</td>
+<td class="r b Data">  91420</td>
+<td class="r b Data">  41867</td>
+<td class="r b Data">  45114</td>
+<td class="r b Data"> 110663</td>
+<td class="r b Data">  38380</td>
+<td class="r b Data">  29300</td>
+<td class="r b Data">  22822</td>
+<td class="r b Data">   9593</td>
+<td class="r b Data">  13376</td>
+<td class="r b Data">  27564</td>
+<td class="r b Data">  66534</td>
+<td class="r b Data"> 122442</td>
+<td class="r b Data">   4390</td>
+<td class="r b Data">   7839</td>
+<td class="r b Data">   6021</td>
+<td class="r b Data">   1671</td>
+<td class="r b Data">  50338</td>
+<td class="r b Data">  20685</td>
+<td class="r b Data">  28782</td>
+<td class="r b Data">  41274</td>
+<td class="r b Data">   4241</td>
+<td class="r b Data">  16253</td>
+<td class="r b Data">   4494</td>
+<td class="r b Data">   5134</td>
+<td class="r b Data">  10691</td>
+<td class="r b Data">  49133</td>
+<td class="r b Data">     15</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">081-100                          </th>
+<td class="r b Data"> 889243</td>
+<td class="r b Data">  77852</td>
+<td class="r b Data">  44896</td>
+<td class="r b Data">  43981</td>
+<td class="r b Data"> 114888</td>
+<td class="r b Data">  36658</td>
+<td class="r b Data">  30659</td>
+<td class="r b Data">  20033</td>
+<td class="r b Data">   9442</td>
+<td class="r b Data">  14173</td>
+<td class="r b Data">  30044</td>
+<td class="r b Data">  74007</td>
+<td class="r b Data"> 133416</td>
+<td class="r b Data">   4899</td>
+<td class="r b Data">   8968</td>
+<td class="r b Data">   5950</td>
+<td class="r b Data">   1837</td>
+<td class="r b Data">  55239</td>
+<td class="r b Data">  22621</td>
+<td class="r b Data">  32548</td>
+<td class="r b Data">  43752</td>
+<td class="r b Data">   4573</td>
+<td class="r b Data">  17520</td>
+<td class="r b Data">   4981</td>
+<td class="r b Data">   5086</td>
+<td class="r b Data">  11584</td>
+<td class="r b Data">  39632</td>
+<td class="r b Data">      4</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">101-120                          </th>
+<td class="r b Data"> 761772</td>
+<td class="r b Data">  66765</td>
+<td class="r b Data">  35297</td>
+<td class="r b Data">  36413</td>
+<td class="r b Data">  86136</td>
+<td class="r b Data">  28952</td>
+<td class="r b Data">  25609</td>
+<td class="r b Data">  15803</td>
+<td class="r b Data">   6746</td>
+<td class="r b Data">  11950</td>
+<td class="r b Data">  26195</td>
+<td class="r b Data">  67245</td>
+<td class="r b Data"> 130002</td>
+<td class="r b Data">   4170</td>
+<td class="r b Data">   7485</td>
+<td class="r b Data">   5149</td>
+<td class="r b Data">   1554</td>
+<td class="r b Data">  47516</td>
+<td class="r b Data">  19909</td>
+<td class="r b Data">  26926</td>
+<td class="r b Data">  36264</td>
+<td class="r b Data">   3460</td>
+<td class="r b Data">  16156</td>
+<td class="r b Data">   3728</td>
+<td class="r b Data">   4604</td>
+<td class="r b Data">  13435</td>
+<td class="r b Data">  34302</td>
+<td class="r b Data">      1</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">121-140                          </th>
+<td class="r b Data"> 333589</td>
+<td class="r b Data">  26591</td>
+<td class="r b Data">  14924</td>
+<td class="r b Data">  16629</td>
+<td class="r b Data">  35221</td>
+<td class="r b Data">  10223</td>
+<td class="r b Data">  11248</td>
+<td class="r b Data">   5872</td>
+<td class="r b Data">   2442</td>
+<td class="r b Data">   5892</td>
+<td class="r b Data">  12400</td>
+<td class="r b Data">  30825</td>
+<td class="r b Data">  63134</td>
+<td class="r b Data">   1684</td>
+<td class="r b Data">   3681</td>
+<td class="r b Data">   2401</td>
+<td class="r b Data">    738</td>
+<td class="r b Data">  21295</td>
+<td class="r b Data">   8876</td>
+<td class="r b Data">  11856</td>
+<td class="r b Data">  14320</td>
+<td class="r b Data">   1387</td>
+<td class="r b Data">   7860</td>
+<td class="r b Data">   1554</td>
+<td class="r b Data">   1932</td>
+<td class="r b Data">   7151</td>
+<td class="r b Data">  13453</td>
+<td class="r b Data">0</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">141-160                          </th>
+<td class="r b Data"> 260507</td>
+<td class="r b Data">  19387</td>
+<td class="r b Data">  11198</td>
+<td class="r b Data">  12427</td>
+<td class="r b Data">  27480</td>
+<td class="r b Data">   7453</td>
+<td class="r b Data">   8355</td>
+<td class="r b Data">   4130</td>
+<td class="r b Data">   1718</td>
+<td class="r b Data">   4305</td>
+<td class="r b Data">   9821</td>
+<td class="r b Data">  23898</td>
+<td class="r b Data">  52691</td>
+<td class="r b Data">   1374</td>
+<td class="r b Data">   2740</td>
+<td class="r b Data">   1965</td>
+<td class="r b Data">    661</td>
+<td class="r b Data">  17036</td>
+<td class="r b Data">   7651</td>
+<td class="r b Data">   9574</td>
+<td class="r b Data">  10672</td>
+<td class="r b Data">    970</td>
+<td class="r b Data">   6848</td>
+<td class="r b Data">   1112</td>
+<td class="r b Data">   1470</td>
+<td class="r b Data">   5856</td>
+<td class="r b Data">   9715</td>
+<td class="r b Data">0</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">161-999                          </th>
+<td class="r b Data"> 366458</td>
+<td class="r b Data">  28990</td>
+<td class="r b Data">  14530</td>
+<td class="r b Data">  21618</td>
+<td class="r b Data">  31028</td>
+<td class="r b Data">   8081</td>
+<td class="r b Data">  10471</td>
+<td class="r b Data">   4952</td>
+<td class="r b Data">   1915</td>
+<td class="r b Data">   6492</td>
+<td class="r b Data">  13322</td>
+<td class="r b Data">  30716</td>
+<td class="r b Data">  79509</td>
+<td class="r b Data">   1618</td>
+<td class="r b Data">   3569</td>
+<td class="r b Data">   2856</td>
+<td class="r b Data">   1050</td>
+<td class="r b Data">  23074</td>
+<td class="r b Data">  10442</td>
+<td class="r b Data">  12598</td>
+<td class="r b Data">  13204</td>
+<td class="r b Data">   1041</td>
+<td class="r b Data">  12148</td>
+<td class="r b Data">   1465</td>
+<td class="r b Data">   2655</td>
+<td class="r b Data">  12445</td>
+<td class="r b Data">  16669</td>
+<td class="r b Data">0</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">nicht spezifiziert / non spécifié</th>
+<td class="r b Data">  55629</td>
+<td class="r b Data">    321</td>
+<td class="r b Data">    681</td>
+<td class="r b Data">    686</td>
+<td class="r b Data">   8391</td>
+<td class="r b Data">    854</td>
+<td class="r b Data">   4013</td>
+<td class="r b Data">    940</td>
+<td class="r b Data">    219</td>
+<td class="r b Data">   1257</td>
+<td class="r b Data">   1324</td>
+<td class="r b Data">   7967</td>
+<td class="r b Data">  14933</td>
+<td class="r b Data">    179</td>
+<td class="r b Data">    797</td>
+<td class="r b Data">    152</td>
+<td class="r b Data">     52</td>
+<td class="r b Data">   3827</td>
+<td class="r b Data">    848</td>
+<td class="r b Data">   2050</td>
+<td class="r b Data">   2539</td>
+<td class="r b Data">     61</td>
+<td class="r b Data">   1773</td>
+<td class="r b Data">    168</td>
+<td class="r b Data">    225</td>
+<td class="r b Data">   1327</td>
+<td class="r b Data">     22</td>
+<td class="r b Data">     23</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">Mittlere Leistung<BR> Puissance moyenne</th>
+<td class="r b Data">    101</td>
+<td class="r b Data">     97</td>
+<td class="r b Data">     99</td>
+<td class="r b Data">    101</td>
+<td class="r b Data">     97</td>
+<td class="r b Data">     93</td>
+<td class="r b Data">     98</td>
+<td class="r b Data">     93</td>
+<td class="r b Data">     92</td>
+<td class="r b Data">    104</td>
+<td class="r b Data">    103</td>
+<td class="r b Data">    103</td>
+<td class="r b Data">    108</td>
+<td class="r b Data">    100</td>
+<td class="r b Data">    101</td>
+<td class="r b Data">    103</td>
+<td class="r b Data">    108</td>
+<td class="r b Data">    102</td>
+<td class="r b Data">    105</td>
+<td class="r b Data">    101</td>
+<td class="r b Data">     98</td>
+<td class="r b Data">     97</td>
+<td class="r b Data">    112</td>
+<td class="r b Data">     99</td>
+<td class="r b Data">    105</td>
+<td class="r b Data">    121</td>
+<td class="r b Data">     95</td>
+<td class="r b Data">     72</td>
+</tr>
+<tr>
+<th class="l t RowHeader" style=" background-color: #808080;" scope="row">Emissionscode <BR> Code d'émissions <BR> EURO</th>
+<td class="r b Data" rowspan="2"> 132836</td>
+<td class="r b Data" rowspan="2">  12336</td>
+<td class="r b Data" rowspan="2">   5045</td>
+<td class="r b Data" rowspan="2">  11730</td>
+<td class="r b Data" rowspan="2">  15106</td>
+<td class="r b Data" rowspan="2">   3393</td>
+<td class="r b Data" rowspan="2">   4001</td>
+<td class="r b Data" rowspan="2">   2710</td>
+<td class="r b Data" rowspan="2">    938</td>
+<td class="r b Data" rowspan="2">   2302</td>
+<td class="r b Data" rowspan="2">   4549</td>
+<td class="r b Data" rowspan="2">  10434</td>
+<td class="r b Data" rowspan="2">  24793</td>
+<td class="r b Data" rowspan="2">    530</td>
+<td class="r b Data" rowspan="2">   1750</td>
+<td class="r b Data" rowspan="2">    885</td>
+<td class="r b Data" rowspan="2">    256</td>
+<td class="r b Data" rowspan="2">   6670</td>
+<td class="r b Data" rowspan="2">   3477</td>
+<td class="r b Data" rowspan="2">   5076</td>
+<td class="r b Data" rowspan="2">   4022</td>
+<td class="r b Data" rowspan="2">    405</td>
+<td class="r b Data" rowspan="2">   3037</td>
+<td class="r b Data" rowspan="2">    480</td>
+<td class="r b Data" rowspan="2">    569</td>
+<td class="r b Data" rowspan="2">   2136</td>
+<td class="r b Data" rowspan="2">   6178</td>
+<td class="r b Data" rowspan="2">     28</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">00</th>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">01</th>
+<td class="r b Data"> 470640</td>
+<td class="r b Data">  32463</td>
+<td class="r b Data">  25482</td>
+<td class="r b Data">  25970</td>
+<td class="r b Data">  76764</td>
+<td class="r b Data">  14253</td>
+<td class="r b Data">  18316</td>
+<td class="r b Data">  10450</td>
+<td class="r b Data">   5506</td>
+<td class="r b Data">   8992</td>
+<td class="r b Data">  14789</td>
+<td class="r b Data">  38323</td>
+<td class="r b Data">  68723</td>
+<td class="r b Data">   2590</td>
+<td class="r b Data">   5609</td>
+<td class="r b Data">   3183</td>
+<td class="r b Data">    909</td>
+<td class="r b Data">  27626</td>
+<td class="r b Data">  13094</td>
+<td class="r b Data">  18251</td>
+<td class="r b Data">  19626</td>
+<td class="r b Data">   2143</td>
+<td class="r b Data">   9527</td>
+<td class="r b Data">   2234</td>
+<td class="r b Data">   2001</td>
+<td class="r b Data">   4984</td>
+<td class="r b Data">  18818</td>
+<td class="r b Data">     14</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">02</th>
+<td class="r b Data"> 705486</td>
+<td class="r b Data">  57017</td>
+<td class="r b Data">  37775</td>
+<td class="r b Data">  37017</td>
+<td class="r b Data">  82891</td>
+<td class="r b Data">  27006</td>
+<td class="r b Data">  26012</td>
+<td class="r b Data">  14755</td>
+<td class="r b Data">   6693</td>
+<td class="r b Data">  11491</td>
+<td class="r b Data">  25237</td>
+<td class="r b Data">  61450</td>
+<td class="r b Data"> 106637</td>
+<td class="r b Data">   3969</td>
+<td class="r b Data">   8024</td>
+<td class="r b Data">   5131</td>
+<td class="r b Data">   1633</td>
+<td class="r b Data">  47412</td>
+<td class="r b Data">  17263</td>
+<td class="r b Data">  29361</td>
+<td class="r b Data">  34099</td>
+<td class="r b Data">   3606</td>
+<td class="r b Data">  14338</td>
+<td class="r b Data">   3938</td>
+<td class="r b Data">   4042</td>
+<td class="r b Data">   8474</td>
+<td class="r b Data">  30214</td>
+<td class="r b Data">      1</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">03</th>
+<td class="r b Data"> 747058</td>
+<td class="r b Data">  64786</td>
+<td class="r b Data">  35885</td>
+<td class="r b Data">  35116</td>
+<td class="r b Data">  91993</td>
+<td class="r b Data">  29541</td>
+<td class="r b Data">  26066</td>
+<td class="r b Data">  15863</td>
+<td class="r b Data">   6809</td>
+<td class="r b Data">  10636</td>
+<td class="r b Data">  24886</td>
+<td class="r b Data">  63416</td>
+<td class="r b Data"> 118574</td>
+<td class="r b Data">   4018</td>
+<td class="r b Data">   7565</td>
+<td class="r b Data">   5390</td>
+<td class="r b Data">   1684</td>
+<td class="r b Data">  47063</td>
+<td class="r b Data">  20545</td>
+<td class="r b Data">  27088</td>
+<td class="r b Data">  34940</td>
+<td class="r b Data">   3605</td>
+<td class="r b Data">  15927</td>
+<td class="r b Data">   4025</td>
+<td class="r b Data">   4509</td>
+<td class="r b Data">  11098</td>
+<td class="r b Data">  36029</td>
+<td class="r b Data">      1</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">04</th>
+<td class="r b Data">1648707</td>
+<td class="r b Data"> 158548</td>
+<td class="r b Data">  70313</td>
+<td class="r b Data">  83984</td>
+<td class="r b Data"> 178180</td>
+<td class="r b Data">  66405</td>
+<td class="r b Data">  54417</td>
+<td class="r b Data">  37039</td>
+<td class="r b Data">  15133</td>
+<td class="r b Data">  24427</td>
+<td class="r b Data">  55942</td>
+<td class="r b Data"> 138058</td>
+<td class="r b Data"> 277833</td>
+<td class="r b Data">   8075</td>
+<td class="r b Data">  14947</td>
+<td class="r b Data">  11168</td>
+<td class="r b Data">   3194</td>
+<td class="r b Data">  99270</td>
+<td class="r b Data">  38040</td>
+<td class="r b Data">  54567</td>
+<td class="r b Data">  78553</td>
+<td class="r b Data">   6739</td>
+<td class="r b Data">  35746</td>
+<td class="r b Data">   7638</td>
+<td class="r b Data">  10525</td>
+<td class="r b Data">  31379</td>
+<td class="r b Data">  88587</td>
+<td class="r b Data">0</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">05</th>
+<td class="r b Data"> 457283</td>
+<td class="r b Data">  50155</td>
+<td class="r b Data">  16981</td>
+<td class="r b Data">  24392</td>
+<td class="r b Data">  43364</td>
+<td class="r b Data">  18280</td>
+<td class="r b Data">  13700</td>
+<td class="r b Data">  10884</td>
+<td class="r b Data">   4330</td>
+<td class="r b Data">   8659</td>
+<td class="r b Data">  14456</td>
+<td class="r b Data">  36340</td>
+<td class="r b Data">  84603</td>
+<td class="r b Data">   2058</td>
+<td class="r b Data">   3532</td>
+<td class="r b Data">   2607</td>
+<td class="r b Data">    838</td>
+<td class="r b Data">  24740</td>
+<td class="r b Data">   9867</td>
+<td class="r b Data">  12684</td>
+<td class="r b Data">  19698</td>
+<td class="r b Data">   1517</td>
+<td class="r b Data">   9984</td>
+<td class="r b Data">   1790</td>
+<td class="r b Data">   2716</td>
+<td class="r b Data">  10850</td>
+<td class="r b Data">  28258</td>
+<td class="r b Data">0</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">06</th>
+<td class="r b Data">    993</td>
+<td class="r b Data">     94</td>
+<td class="r b Data">     27</td>
+<td class="r b Data">     61</td>
+<td class="r b Data">     70</td>
+<td class="r b Data">     24</td>
+<td class="r b Data">     22</td>
+<td class="r b Data">     12</td>
+<td class="r b Data">      3</td>
+<td class="r b Data">     16</td>
+<td class="r b Data">     23</td>
+<td class="r b Data">     96</td>
+<td class="r b Data">    224</td>
+<td class="r b Data">      2</td>
+<td class="r b Data">     10</td>
+<td class="r b Data">     12</td>
+<td class="r b Data">      4</td>
+<td class="r b Data">     57</td>
+<td class="r b Data">     22</td>
+<td class="r b Data">     29</td>
+<td class="r b Data">     40</td>
+<td class="r b Data">      4</td>
+<td class="r b Data">     34</td>
+<td class="r b Data">      5</td>
+<td class="r b Data">      7</td>
+<td class="r b Data">     38</td>
+<td class="r b Data">     57</td>
+<td class="r b Data">0</td>
+</tr>
+<tr>
+<th class="l t RowHeader" style=" background-color: #808080;" scope="row">Energieeffizienzkategorie <BR> Catégorie d'efficacité énergétique</th>
+<td class="r b Data" rowspan="2"> 912578</td>
+<td class="r b Data" rowspan="2">  69503</td>
+<td class="r b Data" rowspan="2">  34833</td>
+<td class="r b Data" rowspan="2">  42369</td>
+<td class="r b Data" rowspan="2"> 111899</td>
+<td class="r b Data" rowspan="2">  20327</td>
+<td class="r b Data" rowspan="2">  41213</td>
+<td class="r b Data" rowspan="2">  25682</td>
+<td class="r b Data" rowspan="2">  12587</td>
+<td class="r b Data" rowspan="2">  14435</td>
+<td class="r b Data" rowspan="2">  22625</td>
+<td class="r b Data" rowspan="2">  74055</td>
+<td class="r b Data" rowspan="2"> 180166</td>
+<td class="r b Data" rowspan="2">   3864</td>
+<td class="r b Data" rowspan="2">  10978</td>
+<td class="r b Data" rowspan="2">   4862</td>
+<td class="r b Data" rowspan="2">   1344</td>
+<td class="r b Data" rowspan="2">  42898</td>
+<td class="r b Data" rowspan="2">  19072</td>
+<td class="r b Data" rowspan="2">  28139</td>
+<td class="r b Data" rowspan="2">  39064</td>
+<td class="r b Data" rowspan="2">   3126</td>
+<td class="r b Data" rowspan="2">  26613</td>
+<td class="r b Data" rowspan="2">   3369</td>
+<td class="r b Data" rowspan="2">   3565</td>
+<td class="r b Data" rowspan="2">   8900</td>
+<td class="r b Data" rowspan="2">  67047</td>
+<td class="r b Data" rowspan="2">     43</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row"> </th>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">A </th>
+<td class="r b Data"> 349515</td>
+<td class="r b Data">  40519</td>
+<td class="r b Data">  13808</td>
+<td class="r b Data">  19743</td>
+<td class="r b Data">  38150</td>
+<td class="r b Data">  15815</td>
+<td class="r b Data">   9653</td>
+<td class="r b Data">   8352</td>
+<td class="r b Data">   3331</td>
+<td class="r b Data">   6924</td>
+<td class="r b Data">  11837</td>
+<td class="r b Data">  26384</td>
+<td class="r b Data">  52527</td>
+<td class="r b Data">   1648</td>
+<td class="r b Data">   2838</td>
+<td class="r b Data">   1954</td>
+<td class="r b Data">    601</td>
+<td class="r b Data">  22406</td>
+<td class="r b Data">   6564</td>
+<td class="r b Data">  11286</td>
+<td class="r b Data">  17072</td>
+<td class="r b Data">   1174</td>
+<td class="r b Data">   5287</td>
+<td class="r b Data">   1538</td>
+<td class="r b Data">   2206</td>
+<td class="r b Data">   6465</td>
+<td class="r b Data">  21433</td>
+<td class="r b Data">0</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">B </th>
+<td class="r b Data"> 466247</td>
+<td class="r b Data">  51423</td>
+<td class="r b Data">  21458</td>
+<td class="r b Data">  25401</td>
+<td class="r b Data">  50499</td>
+<td class="r b Data">  21949</td>
+<td class="r b Data">  14232</td>
+<td class="r b Data">  11561</td>
+<td class="r b Data">   4581</td>
+<td class="r b Data">   7058</td>
+<td class="r b Data">  15429</td>
+<td class="r b Data">  36448</td>
+<td class="r b Data">  68306</td>
+<td class="r b Data">   2379</td>
+<td class="r b Data">   3810</td>
+<td class="r b Data">   2949</td>
+<td class="r b Data">    840</td>
+<td class="r b Data">  28234</td>
+<td class="r b Data">  10573</td>
+<td class="r b Data">  15509</td>
+<td class="r b Data">  22955</td>
+<td class="r b Data">   1933</td>
+<td class="r b Data">   7902</td>
+<td class="r b Data">   2356</td>
+<td class="r b Data">   2932</td>
+<td class="r b Data">   8443</td>
+<td class="r b Data">  27087</td>
+<td class="r b Data">0</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">C </th>
+<td class="r b Data"> 552127</td>
+<td class="r b Data">  56366</td>
+<td class="r b Data">  25803</td>
+<td class="r b Data">  30441</td>
+<td class="r b Data">  63090</td>
+<td class="r b Data">  26460</td>
+<td class="r b Data">  17211</td>
+<td class="r b Data">  12969</td>
+<td class="r b Data">   5342</td>
+<td class="r b Data">   8231</td>
+<td class="r b Data">  18426</td>
+<td class="r b Data">  44850</td>
+<td class="r b Data">  82573</td>
+<td class="r b Data">   2802</td>
+<td class="r b Data">   4886</td>
+<td class="r b Data">   3520</td>
+<td class="r b Data">   1042</td>
+<td class="r b Data">  34018</td>
+<td class="r b Data">  11890</td>
+<td class="r b Data">  19031</td>
+<td class="r b Data">  27359</td>
+<td class="r b Data">   2437</td>
+<td class="r b Data">   9774</td>
+<td class="r b Data">   2834</td>
+<td class="r b Data">   3659</td>
+<td class="r b Data">   9853</td>
+<td class="r b Data">  27260</td>
+<td class="r b Data">0</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">D </th>
+<td class="r b Data"> 535649</td>
+<td class="r b Data">  51028</td>
+<td class="r b Data">  26177</td>
+<td class="r b Data">  29802</td>
+<td class="r b Data">  64160</td>
+<td class="r b Data">  24797</td>
+<td class="r b Data">  16862</td>
+<td class="r b Data">  10975</td>
+<td class="r b Data">   4772</td>
+<td class="r b Data">   7617</td>
+<td class="r b Data">  18749</td>
+<td class="r b Data">  45562</td>
+<td class="r b Data">  79739</td>
+<td class="r b Data">   2873</td>
+<td class="r b Data">   4935</td>
+<td class="r b Data">   3728</td>
+<td class="r b Data">   1100</td>
+<td class="r b Data">  33892</td>
+<td class="r b Data">  12143</td>
+<td class="r b Data">  19694</td>
+<td class="r b Data">  26276</td>
+<td class="r b Data">   2490</td>
+<td class="r b Data">   9798</td>
+<td class="r b Data">   2737</td>
+<td class="r b Data">   3475</td>
+<td class="r b Data">   9908</td>
+<td class="r b Data">  22360</td>
+<td class="r b Data">0</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">E </th>
+<td class="r b Data"> 447181</td>
+<td class="r b Data">  38316</td>
+<td class="r b Data">  23694</td>
+<td class="r b Data">  23326</td>
+<td class="r b Data">  56768</td>
+<td class="r b Data">  18943</td>
+<td class="r b Data">  14248</td>
+<td class="r b Data">   8264</td>
+<td class="r b Data">   3483</td>
+<td class="r b Data">   6816</td>
+<td class="r b Data">  16556</td>
+<td class="r b Data">  38587</td>
+<td class="r b Data">  67031</td>
+<td class="r b Data">   2514</td>
+<td class="r b Data">   4262</td>
+<td class="r b Data">   3434</td>
+<td class="r b Data">   1087</td>
+<td class="r b Data">  28820</td>
+<td class="r b Data">  12241</td>
+<td class="r b Data">  16940</td>
+<td class="r b Data">  21158</td>
+<td class="r b Data">   2236</td>
+<td class="r b Data">   8607</td>
+<td class="r b Data">   2519</td>
+<td class="r b Data">   2943</td>
+<td class="r b Data">   8196</td>
+<td class="r b Data">  16192</td>
+<td class="r b Data">0</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">F </th>
+<td class="r b Data"> 351266</td>
+<td class="r b Data">  27770</td>
+<td class="r b Data">  19041</td>
+<td class="r b Data">  18407</td>
+<td class="r b Data">  42948</td>
+<td class="r b Data">  13668</td>
+<td class="r b Data">  11436</td>
+<td class="r b Data">   5927</td>
+<td class="r b Data">   2255</td>
+<td class="r b Data">   5807</td>
+<td class="r b Data">  13771</td>
+<td class="r b Data">  31146</td>
+<td class="r b Data">  53536</td>
+<td class="r b Data">   2039</td>
+<td class="r b Data">   3703</td>
+<td class="r b Data">   2992</td>
+<td class="r b Data">    951</td>
+<td class="r b Data">  24644</td>
+<td class="r b Data">  11170</td>
+<td class="r b Data">  14230</td>
+<td class="r b Data">  15854</td>
+<td class="r b Data">   1961</td>
+<td class="r b Data">   7167</td>
+<td class="r b Data">   2051</td>
+<td class="r b Data">   2090</td>
+<td class="r b Data">   6177</td>
+<td class="r b Data">  10524</td>
+<td class="r b Data">      1</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">G </th>
+<td class="r b Data"> 548440</td>
+<td class="r b Data">  40474</td>
+<td class="r b Data">  26694</td>
+<td class="r b Data">  28781</td>
+<td class="r b Data">  60854</td>
+<td class="r b Data">  16943</td>
+<td class="r b Data">  17679</td>
+<td class="r b Data">   7983</td>
+<td class="r b Data">   3061</td>
+<td class="r b Data">   9635</td>
+<td class="r b Data">  22489</td>
+<td class="r b Data">  51085</td>
+<td class="r b Data">  97509</td>
+<td class="r b Data">   3123</td>
+<td class="r b Data">   6025</td>
+<td class="r b Data">   4937</td>
+<td class="r b Data">   1553</td>
+<td class="r b Data">  37926</td>
+<td class="r b Data">  18655</td>
+<td class="r b Data">  22227</td>
+<td class="r b Data">  21240</td>
+<td class="r b Data">   2662</td>
+<td class="r b Data">  13445</td>
+<td class="r b Data">   2706</td>
+<td class="r b Data">   3499</td>
+<td class="r b Data">  11017</td>
+<td class="r b Data">  16238</td>
+<td class="r b Data">0</td>
+</tr>
+<tr>
+<th class="l t RowHeader" style=" background-color: #808080;" scope="row">Alter in Jahren<BR> Age en années</th>
+<td class="r b Data" rowspan="2"> 302173</td>
+<td class="r b Data" rowspan="2">  33862</td>
+<td class="r b Data" rowspan="2">  11538</td>
+<td class="r b Data" rowspan="2">  15901</td>
+<td class="r b Data" rowspan="2">  29572</td>
+<td class="r b Data" rowspan="2">  12289</td>
+<td class="r b Data" rowspan="2">   9186</td>
+<td class="r b Data" rowspan="2">   7314</td>
+<td class="r b Data" rowspan="2">   3056</td>
+<td class="r b Data" rowspan="2">   6339</td>
+<td class="r b Data" rowspan="2">   9235</td>
+<td class="r b Data" rowspan="2">  23954</td>
+<td class="r b Data" rowspan="2">  55084</td>
+<td class="r b Data" rowspan="2">   1367</td>
+<td class="r b Data" rowspan="2">   2298</td>
+<td class="r b Data" rowspan="2">   1696</td>
+<td class="r b Data" rowspan="2">    570</td>
+<td class="r b Data" rowspan="2">  16058</td>
+<td class="r b Data" rowspan="2">   6395</td>
+<td class="r b Data" rowspan="2">   8367</td>
+<td class="r b Data" rowspan="2">  13007</td>
+<td class="r b Data" rowspan="2">    991</td>
+<td class="r b Data" rowspan="2">   6316</td>
+<td class="r b Data" rowspan="2">   1158</td>
+<td class="r b Data" rowspan="2">   1691</td>
+<td class="r b Data" rowspan="2">   6638</td>
+<td class="r b Data" rowspan="2">  18291</td>
+<td class="r b Data" rowspan="2">0</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">   0                    </th>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">   1                    </th>
+<td class="r b Data"> 281746</td>
+<td class="r b Data">  30306</td>
+<td class="r b Data">  11589</td>
+<td class="r b Data">  14985</td>
+<td class="r b Data">  27889</td>
+<td class="r b Data">  11860</td>
+<td class="r b Data">   8899</td>
+<td class="r b Data">   6869</td>
+<td class="r b Data">   2796</td>
+<td class="r b Data">   4443</td>
+<td class="r b Data">   9264</td>
+<td class="r b Data">  22585</td>
+<td class="r b Data">  48177</td>
+<td class="r b Data">   1369</td>
+<td class="r b Data">   2386</td>
+<td class="r b Data">   1853</td>
+<td class="r b Data">    515</td>
+<td class="r b Data">  15766</td>
+<td class="r b Data">   6250</td>
+<td class="r b Data">   8137</td>
+<td class="r b Data">  12134</td>
+<td class="r b Data">   1006</td>
+<td class="r b Data">   6069</td>
+<td class="r b Data">   1210</td>
+<td class="r b Data">   1762</td>
+<td class="r b Data">   6078</td>
+<td class="r b Data">  17549</td>
+<td class="r b Data">0</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">   2                    </th>
+<td class="r b Data"> 261897</td>
+<td class="r b Data">  27186</td>
+<td class="r b Data">  10732</td>
+<td class="r b Data">  13841</td>
+<td class="r b Data">  26710</td>
+<td class="r b Data">  10737</td>
+<td class="r b Data">   8315</td>
+<td class="r b Data">   6302</td>
+<td class="r b Data">   2561</td>
+<td class="r b Data">   4058</td>
+<td class="r b Data">   8509</td>
+<td class="r b Data">  21113</td>
+<td class="r b Data">  44777</td>
+<td class="r b Data">   1183</td>
+<td class="r b Data">   2207</td>
+<td class="r b Data">   1660</td>
+<td class="r b Data">    482</td>
+<td class="r b Data">  14839</td>
+<td class="r b Data">   6038</td>
+<td class="r b Data">   7805</td>
+<td class="r b Data">  11825</td>
+<td class="r b Data">   1011</td>
+<td class="r b Data">   5577</td>
+<td class="r b Data">   1133</td>
+<td class="r b Data">   1595</td>
+<td class="r b Data">   5736</td>
+<td class="r b Data">  15965</td>
+<td class="r b Data">0</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">   3                    </th>
+<td class="r b Data"> 281250</td>
+<td class="r b Data">  28250</td>
+<td class="r b Data">  11585</td>
+<td class="r b Data">  15097</td>
+<td class="r b Data">  28844</td>
+<td class="r b Data">  10881</td>
+<td class="r b Data">   9060</td>
+<td class="r b Data">   6411</td>
+<td class="r b Data">   2689</td>
+<td class="r b Data">   4318</td>
+<td class="r b Data">   9298</td>
+<td class="r b Data">  23049</td>
+<td class="r b Data">  48693</td>
+<td class="r b Data">   1297</td>
+<td class="r b Data">   2501</td>
+<td class="r b Data">   1803</td>
+<td class="r b Data">    477</td>
+<td class="r b Data">  16100</td>
+<td class="r b Data">   6711</td>
+<td class="r b Data">   8732</td>
+<td class="r b Data">  13013</td>
+<td class="r b Data">   1035</td>
+<td class="r b Data">   6171</td>
+<td class="r b Data">   1317</td>
+<td class="r b Data">   1758</td>
+<td class="r b Data">   6005</td>
+<td class="r b Data">  16155</td>
+<td class="r b Data">0</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">   4                    </th>
+<td class="r b Data"> 266354</td>
+<td class="r b Data">  25842</td>
+<td class="r b Data">  11334</td>
+<td class="r b Data">  13909</td>
+<td class="r b Data">  28183</td>
+<td class="r b Data">  10602</td>
+<td class="r b Data">   8510</td>
+<td class="r b Data">   5916</td>
+<td class="r b Data">   2353</td>
+<td class="r b Data">   3789</td>
+<td class="r b Data">   8879</td>
+<td class="r b Data">  22236</td>
+<td class="r b Data">  45718</td>
+<td class="r b Data">   1380</td>
+<td class="r b Data">   2333</td>
+<td class="r b Data">   1779</td>
+<td class="r b Data">    549</td>
+<td class="r b Data">  15709</td>
+<td class="r b Data">   6382</td>
+<td class="r b Data">   8632</td>
+<td class="r b Data">  12082</td>
+<td class="r b Data">   1002</td>
+<td class="r b Data">   6035</td>
+<td class="r b Data">   1284</td>
+<td class="r b Data">   1793</td>
+<td class="r b Data">   5367</td>
+<td class="r b Data">  14756</td>
+<td class="r b Data">0</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">   5                    </th>
+<td class="r b Data"> 254220</td>
+<td class="r b Data">  24023</td>
+<td class="r b Data">  10990</td>
+<td class="r b Data">  12991</td>
+<td class="r b Data">  27814</td>
+<td class="r b Data">   9950</td>
+<td class="r b Data">   8374</td>
+<td class="r b Data">   5649</td>
+<td class="r b Data">   2235</td>
+<td class="r b Data">   3570</td>
+<td class="r b Data">   8649</td>
+<td class="r b Data">  21315</td>
+<td class="r b Data">  42791</td>
+<td class="r b Data">   1248</td>
+<td class="r b Data">   2311</td>
+<td class="r b Data">   1728</td>
+<td class="r b Data">    507</td>
+<td class="r b Data">  15450</td>
+<td class="r b Data">   6188</td>
+<td class="r b Data">   8535</td>
+<td class="r b Data">  12311</td>
+<td class="r b Data">   1131</td>
+<td class="r b Data">   5621</td>
+<td class="r b Data">   1258</td>
+<td class="r b Data">   1590</td>
+<td class="r b Data">   4766</td>
+<td class="r b Data">  13225</td>
+<td class="r b Data">0</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">   6                    </th>
+<td class="r b Data"> 246432</td>
+<td class="r b Data">  22872</td>
+<td class="r b Data">  11215</td>
+<td class="r b Data">  12424</td>
+<td class="r b Data">  27990</td>
+<td class="r b Data">   9770</td>
+<td class="r b Data">   8254</td>
+<td class="r b Data">   5414</td>
+<td class="r b Data">   2229</td>
+<td class="r b Data">   3364</td>
+<td class="r b Data">   8476</td>
+<td class="r b Data">  20864</td>
+<td class="r b Data">  40380</td>
+<td class="r b Data">   1127</td>
+<td class="r b Data">   2355</td>
+<td class="r b Data">   1758</td>
+<td class="r b Data">    522</td>
+<td class="r b Data">  15146</td>
+<td class="r b Data">   6193</td>
+<td class="r b Data">   8477</td>
+<td class="r b Data">  11607</td>
+<td class="r b Data">   1102</td>
+<td class="r b Data">   5372</td>
+<td class="r b Data">   1147</td>
+<td class="r b Data">   1636</td>
+<td class="r b Data">   4127</td>
+<td class="r b Data">  12611</td>
+<td class="r b Data">0</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">   7                    </th>
+<td class="r b Data"> 242989</td>
+<td class="r b Data">  22309</td>
+<td class="r b Data">  11072</td>
+<td class="r b Data">  12122</td>
+<td class="r b Data">  27835</td>
+<td class="r b Data">   9712</td>
+<td class="r b Data">   8375</td>
+<td class="r b Data">   5302</td>
+<td class="r b Data">   2149</td>
+<td class="r b Data">   3457</td>
+<td class="r b Data">   8468</td>
+<td class="r b Data">  20711</td>
+<td class="r b Data">  39732</td>
+<td class="r b Data">   1222</td>
+<td class="r b Data">   2365</td>
+<td class="r b Data">   1686</td>
+<td class="r b Data">    483</td>
+<td class="r b Data">  15243</td>
+<td class="r b Data">   5725</td>
+<td class="r b Data">   8476</td>
+<td class="r b Data">  11755</td>
+<td class="r b Data">   1087</td>
+<td class="r b Data">   5113</td>
+<td class="r b Data">   1181</td>
+<td class="r b Data">   1498</td>
+<td class="r b Data">   3944</td>
+<td class="r b Data">  11967</td>
+<td class="r b Data">0</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">   8                    </th>
+<td class="r b Data"> 238080</td>
+<td class="r b Data">  20869</td>
+<td class="r b Data">  10876</td>
+<td class="r b Data">  12060</td>
+<td class="r b Data">  28434</td>
+<td class="r b Data">   9450</td>
+<td class="r b Data">   8179</td>
+<td class="r b Data">   5168</td>
+<td class="r b Data">   2096</td>
+<td class="r b Data">   3301</td>
+<td class="r b Data">   8115</td>
+<td class="r b Data">  20177</td>
+<td class="r b Data">  38562</td>
+<td class="r b Data">   1216</td>
+<td class="r b Data">   2426</td>
+<td class="r b Data">   1637</td>
+<td class="r b Data">    508</td>
+<td class="r b Data">  15396</td>
+<td class="r b Data">   6051</td>
+<td class="r b Data">   8798</td>
+<td class="r b Data">  11598</td>
+<td class="r b Data">   1163</td>
+<td class="r b Data">   4955</td>
+<td class="r b Data">   1180</td>
+<td class="r b Data">   1442</td>
+<td class="r b Data">   3665</td>
+<td class="r b Data">  10758</td>
+<td class="r b Data">0</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">   9                    </th>
+<td class="r b Data"> 247926</td>
+<td class="r b Data">  20706</td>
+<td class="r b Data">  11253</td>
+<td class="r b Data">  12163</td>
+<td class="r b Data">  30351</td>
+<td class="r b Data">   9717</td>
+<td class="r b Data">   8622</td>
+<td class="r b Data">   4971</td>
+<td class="r b Data">   2101</td>
+<td class="r b Data">   3590</td>
+<td class="r b Data">   8502</td>
+<td class="r b Data">  21278</td>
+<td class="r b Data">  40414</td>
+<td class="r b Data">   1406</td>
+<td class="r b Data">   2480</td>
+<td class="r b Data">   1786</td>
+<td class="r b Data">    571</td>
+<td class="r b Data">  15855</td>
+<td class="r b Data">   6411</td>
+<td class="r b Data">   9262</td>
+<td class="r b Data">  12205</td>
+<td class="r b Data">   1166</td>
+<td class="r b Data">   5401</td>
+<td class="r b Data">   1251</td>
+<td class="r b Data">   1524</td>
+<td class="r b Data">   3693</td>
+<td class="r b Data">  11247</td>
+<td class="r b Data">0</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">10-14                   </th>
+<td class="r b Data"> 999079</td>
+<td class="r b Data">  79369</td>
+<td class="r b Data">  50108</td>
+<td class="r b Data">  50185</td>
+<td class="r b Data"> 130069</td>
+<td class="r b Data">  37190</td>
+<td class="r b Data">  36141</td>
+<td class="r b Data">  20456</td>
+<td class="r b Data">   9216</td>
+<td class="r b Data">  15672</td>
+<td class="r b Data">  33873</td>
+<td class="r b Data">  85457</td>
+<td class="r b Data"> 156546</td>
+<td class="r b Data">   5514</td>
+<td class="r b Data">  11164</td>
+<td class="r b Data">   7162</td>
+<td class="r b Data">   2245</td>
+<td class="r b Data">  64514</td>
+<td class="r b Data">  25836</td>
+<td class="r b Data">  39441</td>
+<td class="r b Data">  48221</td>
+<td class="r b Data">   4842</td>
+<td class="r b Data">  20659</td>
+<td class="r b Data">   5396</td>
+<td class="r b Data">   5619</td>
+<td class="r b Data">  12867</td>
+<td class="r b Data">  41311</td>
+<td class="r b Data">      6</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">15-19                   </th>
+<td class="r b Data"> 361172</td>
+<td class="r b Data">  26810</td>
+<td class="r b Data">  20794</td>
+<td class="r b Data">  21304</td>
+<td class="r b Data">  51159</td>
+<td class="r b Data">  12123</td>
+<td class="r b Data">  14102</td>
+<td class="r b Data">   8101</td>
+<td class="r b Data">   4010</td>
+<td class="r b Data">   6721</td>
+<td class="r b Data">  12050</td>
+<td class="r b Data">  30011</td>
+<td class="r b Data">  51607</td>
+<td class="r b Data">   2023</td>
+<td class="r b Data">   4348</td>
+<td class="r b Data">   2608</td>
+<td class="r b Data">    713</td>
+<td class="r b Data">  22562</td>
+<td class="r b Data">   9274</td>
+<td class="r b Data">  15164</td>
+<td class="r b Data">  14897</td>
+<td class="r b Data">   1755</td>
+<td class="r b Data">   6934</td>
+<td class="r b Data">   1839</td>
+<td class="r b Data">   1635</td>
+<td class="r b Data">   3618</td>
+<td class="r b Data">  15008</td>
+<td class="r b Data">      2</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">20-24                   </th>
+<td class="r b Data">  95051</td>
+<td class="r b Data">   6621</td>
+<td class="r b Data">   5402</td>
+<td class="r b Data">   6521</td>
+<td class="r b Data">  13170</td>
+<td class="r b Data">   2588</td>
+<td class="r b Data">   3667</td>
+<td class="r b Data">   2235</td>
+<td class="r b Data">   1242</td>
+<td class="r b Data">   2262</td>
+<td class="r b Data">   3294</td>
+<td class="r b Data">   7894</td>
+<td class="r b Data">  13956</td>
+<td class="r b Data">    530</td>
+<td class="r b Data">   1276</td>
+<td class="r b Data">    549</td>
+<td class="r b Data">    178</td>
+<td class="r b Data">   5304</td>
+<td class="r b Data">   2640</td>
+<td class="r b Data">   3829</td>
+<td class="r b Data">   3216</td>
+<td class="r b Data">    418</td>
+<td class="r b Data">   2047</td>
+<td class="r b Data">    392</td>
+<td class="r b Data">    409</td>
+<td class="r b Data">   1001</td>
+<td class="r b Data">   4395</td>
+<td class="r b Data">     15</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">25-29                   </th>
+<td class="r b Data">  21669</td>
+<td class="r b Data">   1694</td>
+<td class="r b Data">   1034</td>
+<td class="r b Data">   1726</td>
+<td class="r b Data">   2690</td>
+<td class="r b Data">    571</td>
+<td class="r b Data">    732</td>
+<td class="r b Data">    528</td>
+<td class="r b Data">    283</td>
+<td class="r b Data">    495</td>
+<td class="r b Data">    744</td>
+<td class="r b Data">   1756</td>
+<td class="r b Data">   3283</td>
+<td class="r b Data">     84</td>
+<td class="r b Data">    248</td>
+<td class="r b Data">    136</td>
+<td class="r b Data">     44</td>
+<td class="r b Data">   1091</td>
+<td class="r b Data">    575</td>
+<td class="r b Data">    820</td>
+<td class="r b Data">    639</td>
+<td class="r b Data">    117</td>
+<td class="r b Data">    493</td>
+<td class="r b Data">     80</td>
+<td class="r b Data">    102</td>
+<td class="r b Data">    250</td>
+<td class="r b Data">   1442</td>
+<td class="r b Data">     12</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">30 und mehr <BR> et plus</th>
+<td class="r b Data">  62954</td>
+<td class="r b Data">   4680</td>
+<td class="r b Data">   1986</td>
+<td class="r b Data">   3041</td>
+<td class="r b Data">   7656</td>
+<td class="r b Data">   1462</td>
+<td class="r b Data">   2117</td>
+<td class="r b Data">   1073</td>
+<td class="r b Data">    394</td>
+<td class="r b Data">   1144</td>
+<td class="r b Data">   2526</td>
+<td class="r b Data">   5717</td>
+<td class="r b Data">  11667</td>
+<td class="r b Data">    276</td>
+<td class="r b Data">    739</td>
+<td class="r b Data">    535</td>
+<td class="r b Data">    154</td>
+<td class="r b Data">   3805</td>
+<td class="r b Data">   1639</td>
+<td class="r b Data">   2581</td>
+<td class="r b Data">   2468</td>
+<td class="r b Data">    193</td>
+<td class="r b Data">   1828</td>
+<td class="r b Data">    284</td>
+<td class="r b Data">    315</td>
+<td class="r b Data">   1204</td>
+<td class="r b Data">   3461</td>
+<td class="r b Data">      9</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">unbekannt <BR> inconnu  </th>
+<td class="r b Data">     11</td>
+<td class="r b Data">0</td>
+<td class="r b Data">0</td>
+<td class="r b Data">0</td>
+<td class="r b Data">      2</td>
+<td class="r b Data">0</td>
+<td class="r b Data">      1</td>
+<td class="r b Data">      4</td>
+<td class="r b Data">      2</td>
+<td class="r b Data">0</td>
+<td class="r b Data">0</td>
+<td class="r b Data">0</td>
+<td class="r b Data">0</td>
+<td class="r b Data">0</td>
+<td class="r b Data">0</td>
+<td class="r b Data">0</td>
+<td class="r b Data">0</td>
+<td class="r b Data">0</td>
+<td class="r b Data">0</td>
+<td class="r b Data">0</td>
+<td class="r b Data">0</td>
+<td class="r b Data">0</td>
+<td class="r b Data">      2</td>
+<td class="r b Data">0</td>
+<td class="r b Data">0</td>
+<td class="r b Data">0</td>
+<td class="r b Data">0</td>
+<td class="r b Data">0</td>
+</tr>
+<tr>
+<th class="l t RowHeader" scope="row">Mittleres Alter<BR> Age moyen</th>
+<td class="r b Data">    8.2</td>
+<td class="r b Data">    7.5</td>
+<td class="r b Data">    8.7</td>
+<td class="r b Data">    8.4</td>
+<td class="r b Data">    8.9</td>
+<td class="r b Data">    7.7</td>
+<td class="r b Data">    8.6</td>
+<td class="r b Data">    7.9</td>
+<td class="r b Data">    8.3</td>
+<td class="r b Data">    8.6</td>
+<td class="r b Data">    8.5</td>
+<td class="r b Data">    8.4</td>
+<td class="r b Data">    8.0</td>
+<td class="r b Data">    8.5</td>
+<td class="r b Data">    9.1</td>
+<td class="r b Data">    8.6</td>
+<td class="r b Data">    8.6</td>
+<td class="r b Data">    8.4</td>
+<td class="r b Data">    8.6</td>
+<td class="r b Data">    9.0</td>
+<td class="r b Data">    8.1</td>
+<td class="r b Data">    8.6</td>
+<td class="r b Data">    8.3</td>
+<td class="r b Data">    8.5</td>
+<td class="r b Data">    7.7</td>
+<td class="r b Data">    7.1</td>
+<td class="r b Data">    7.6</td>
+<td class="r b Data">   24.5</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+<br>
+</div>
+<br><table width=100%><tr> </tr><tr><td align=left><Font size=-1>  ©BFS/OFS/UST (VERK)   19DEC11 </Font></td></tr> </table></body>
+</html>
